@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>The First Blog</title>
+    <url>/2021/01/05/The-First-Blog/</url>
+    <content><![CDATA[<p>The last day of the exam and I can go back to Tianjin soon. </p>
+<p><code>PS:</code> This website which uses <code>hexo</code> is set up by the help of jjc and <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a></p>
+<p>thanks!</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Build Environment</title>
     <url>/2021/01/05/Build-Environment/</url>
     <content><![CDATA[<h2 id="Vs-code"><a href="#Vs-code" class="headerlink" title="Vs code"></a>Vs code</h2><p>I try to use <strong>Visual Studio Code</strong> about two months ago ,because <strong>Pycharm</strong> can’t satisfy the needs of some kinds of languages or wsl. This time I only need to attend some <code>plug-in</code>.</p>
@@ -32,13 +40,5 @@
         <tag>Testing</tag>
         <tag>Another Tag</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>The First Blog</title>
-    <url>/2021/01/05/The-First-Blog/</url>
-    <content><![CDATA[<p>The last day of the exam and I can go back to Tianjin soon. </p>
-<p><code>PS:</code> This website which uses <code>hexo</code> is set up by the help of jjc and <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a></p>
-<p>thanks!</p>
-]]></content>
   </entry>
 </search>
