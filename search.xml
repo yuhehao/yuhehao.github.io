@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Build Environment</title>
+    <url>/2021/01/05/Build-Environment/</url>
+    <content><![CDATA[<h2 id="Vs-code"><a href="#Vs-code" class="headerlink" title="Vs code"></a>Vs code</h2><p>I try to use <strong>Visual Studio Code</strong> about two months ago ,because <strong>Pycharm</strong> can’t satisfy the needs of some kinds of languages or wsl. This time I only need to attend some <code>plug-in</code>.</p>
+<h2 id="g"><a href="#g" class="headerlink" title="g++"></a>g++</h2><p>Because <strong>g++</strong> is in linux and the laptop I used is windows , I had to search the solution on Google .But when I try to do as the  Tutorial ,the browser always said that “ <strong>将您重定向的次数过多</strong>“ .I almost try all solutions on the google, but it makes no sense.</p>
+<p>At last I download it on my mobile-phone and send it to my laptop.</p>
+<h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello,world!"></a>Hello,world!</h2><p>After all, I copy a <code>helloworld.cpp</code>,like that</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>I call <code>g++  test1.cpp</code> and <code>.\test1</code> get the right answer <code>Hello,world!</code></p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/20210104_helloworld.jpg" alt="20210104_helloworld"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/01/05/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -20,5 +32,13 @@
         <tag>Testing</tag>
         <tag>Another Tag</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>The First Blog</title>
+    <url>/2021/01/05/The-First-Blog/</url>
+    <content><![CDATA[<p>The last day of the exam and I can go back to Tianjin soon. </p>
+<p><code>PS:</code> This website which uses <code>hexo</code> is set up by the help of jjc and <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a></p>
+<p>thanks!</p>
+]]></content>
   </entry>
 </search>
