@@ -19,6 +19,12 @@
 <p>I call <code>g++  test1.cpp</code> and <code>.\test1</code> get the right answer <code>Hello,world!</code></p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/20210104_helloworld.jpg" alt="20210104_helloworld"></p>
 ]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>Trying</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
