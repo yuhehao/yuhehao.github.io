@@ -47,4 +47,27 @@
         <tag>Another Tag</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Set My Website Blog</title>
+    <url>/2021/01/06/set-website/</url>
+    <content><![CDATA[<h2 id="How-to-set-this-website"><a href="#How-to-set-this-website" class="headerlink" title="How to set this website"></a>How to set this website</h2><h3 id="hexo-and-next"><a href="#hexo-and-next" class="headerlink" title="hexo and next"></a>hexo and next</h3><h4 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h4><p>My friend tell me that it is easy and I can “开箱即用”(use it fastly after I install it).<br>In this part,this <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a> helps me a lot.It teaches me how to deploy the ssh for github by git ,how to init hexo and how to set up domain name with my github pages.</p>
+<blockquote>
+<p><a href="https://zhuanlan.zhihu.com/p/26625249">https://zhuanlan.zhihu.com/p/26625249</a></p>
+</blockquote>
+<h4 id="next"><a href="#next" class="headerlink" title="next"></a>next</h4><p>The themes “next” on github gets the 15k stars and it has four “skins”and the “landscapes” is so brief which is difficult for me to change it to the pretty appearance in my mind.<br>In this part, I search so many informations on <a href="https://www.googole.com/">google.com</a> and I find so many same article “洗稿，抄袭” on CSDN,”博客园”and so on. Because of my low level, I can’t understand the official document. I read nearly all the infomation in the last five months,but there are still a lot of wrong answers and most of them is out of data.So It took me all day to finish it.<br>This is a website which makes my program crash and I put it here.</p>
+<blockquote>
+<p><a href="https://blog.csdn.net/as480133937/article/details/100138838">https://blog.csdn.net/as480133937/article/details/100138838</a></p>
+</blockquote>
+<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><p>I buy the domain by Tecent Cloud and buy the oss on AliCloud.I put my pictures on oss and use the Resolution Service by github.</p>
+<h3 id="Something-not-important"><a href="#Something-not-important" class="headerlink" title="Something not important"></a>Something not important</h3><p>The tag of the website is<br> <img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/hhyicon.png" alt="hhyicon"></p>
+<p>And I plan to learn C++ after put this website ,but I finish it after 00:00.<br>That’s all.</p>
+]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+        <tag>trying</tag>
+      </tags>
+  </entry>
 </search>
