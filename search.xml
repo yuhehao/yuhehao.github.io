@@ -15,7 +15,7 @@
         <category>C++</category>
       </categories>
       <tags>
-        <tag>Trying</tag>
+        <tag>trying</tag>
       </tags>
   </entry>
   <entry>
@@ -25,6 +25,26 @@
 <p><code>PS:</code> This website which uses <code>hexo</code> is set up by the help of jjc and <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a></p>
 <p>thanks!</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>day2</title>
+    <url>/2021/01/08/d2/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
+<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
+</blockquote>
+<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
+<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
+</blockquote>
+<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
+<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -66,8 +86,8 @@
         <category>web</category>
       </categories>
       <tags>
-        <tag>learning</tag>
         <tag>trying</tag>
+        <tag>learning</tag>
       </tags>
   </entry>
 </search>
