@@ -19,7 +19,7 @@
 <blockquote>
 <p>本来’B’对应的数值66储存在32位的存储单元中，现在却可以储存在8位的存储单元中（grade）。利用字符常量的这种特性，可以定义一个字符常量’FATE’，即把4个独立的8位ASCII码储存在一个32位存储单元中。如果把这样的字符常量赋给char类型变量grade，只有最后8位有效。因此，grade的值是’E’。</p>
 </blockquote>
-<h4 id="website"><a href="#website" class="headerlink" title="website"></a>website</h4><p>update // friends ,about,the icon of tag and the heart icon</p>
+<h2 id="website"><a href="#website" class="headerlink" title="website"></a>website</h2><p>update // friends ,about,the icon of tag and the heart icon</p>
 ]]></content>
       <categories>
         <category>C</category>
@@ -110,6 +110,19 @@
       </categories>
       <tags>
         <tag>trying</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>day4</title>
+    <url>/2021/01/10/day4/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p66"><a href="#p66" class="headerlink" title="p66"></a>p66</h4><p>something in ‘ ‘ is a character(一个字符)</p>
+<p>or something in “ “is a string(一个字符串)</p>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
       </tags>
   </entry>
 </search>
