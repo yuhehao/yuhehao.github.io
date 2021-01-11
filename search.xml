@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>day2</title>
+    <url>/2021/01/08/d2/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
+<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
+</blockquote>
+<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
+<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
+</blockquote>
+<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
+<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Build Environment</title>
+    <url>/2021/01/05/Build-Environment/</url>
+    <content><![CDATA[<h2 id="Vs-code"><a href="#Vs-code" class="headerlink" title="Vs code"></a>Vs code</h2><p>I try to use <strong>Visual Studio Code</strong> about two months ago ,because <strong>Pycharm</strong> can’t satisfy the needs of some kinds of languages or wsl. This time I only need to attend some <code>plug-in</code>.</p>
+<h2 id="g"><a href="#g" class="headerlink" title="g++"></a>g++</h2><p>Because <strong>g++</strong> is in linux and the laptop I used is windows , I had to search the solution on Google .But when I try to do as the  Tutorial ,the browser always said that “ <strong>将您重定向的次数过多</strong>“ .I almost try all solutions on the google, but it makes no sense.</p>
+<p>At last I download it on my mobile-phone and send it to my laptop.</p>
+<h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello,world!"></a>Hello,world!</h2><p>After all, I copy a <code>helloworld.cpp</code>,like that</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>I call <code>g++  test1.cpp</code> and <code>.\test1</code> get the right answer <code>Hello,world!</code></p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/20210104_helloworld.jpg" alt="20210104_helloworld"></p>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>trying</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>The First Blog</title>
     <url>/2021/01/05/The-First-Blog/</url>
     <content><![CDATA[<p>The last day of the exam and I can go back to Tianjin soon. </p>
@@ -52,6 +90,19 @@
       </tags>
   </entry>
   <entry>
+    <title>day4</title>
+    <url>/2021/01/10/day4/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p66"><a href="#p66" class="headerlink" title="p66"></a>p66</h4><p>something in ‘ ‘ is a character(一个字符)</p>
+<p>or something in “ “is a string(一个字符串)</p>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Set My Website Blog</title>
     <url>/2021/01/06/set-website/</url>
     <content><![CDATA[<h2 id="How-to-set-this-website"><a href="#How-to-set-this-website" class="headerlink" title="How to set this website"></a>How to set this website</h2><h3 id="hexo-and-next"><a href="#hexo-and-next" class="headerlink" title="hexo and next"></a>hexo and next</h3><h4 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h4><p>My friend tell me that it is easy and I can “开箱即用”(use it fastly after I install it).<br>In this part,this <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a> helps me a lot.It teaches me how to deploy the ssh for github by git ,how to init hexo and how to set up domain name with my github pages.</p>
@@ -72,57 +123,6 @@
       <tags>
         <tag>learning</tag>
         <tag>trying</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>day2</title>
-    <url>/2021/01/08/d2/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
-<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
-</blockquote>
-<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
-<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
-</blockquote>
-<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
-<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Build Environment</title>
-    <url>/2021/01/05/Build-Environment/</url>
-    <content><![CDATA[<h2 id="Vs-code"><a href="#Vs-code" class="headerlink" title="Vs code"></a>Vs code</h2><p>I try to use <strong>Visual Studio Code</strong> about two months ago ,because <strong>Pycharm</strong> can’t satisfy the needs of some kinds of languages or wsl. This time I only need to attend some <code>plug-in</code>.</p>
-<h2 id="g"><a href="#g" class="headerlink" title="g++"></a>g++</h2><p>Because <strong>g++</strong> is in linux and the laptop I used is windows , I had to search the solution on Google .But when I try to do as the  Tutorial ,the browser always said that “ <strong>将您重定向的次数过多</strong>“ .I almost try all solutions on the google, but it makes no sense.</p>
-<p>At last I download it on my mobile-phone and send it to my laptop.</p>
-<h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello,world!"></a>Hello,world!</h2><p>After all, I copy a <code>helloworld.cpp</code>,like that</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Hello, world!&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>I call <code>g++  test1.cpp</code> and <code>.\test1</code> get the right answer <code>Hello,world!</code></p>
-<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/20210104_helloworld.jpg" alt="20210104_helloworld"></p>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>trying</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>day4</title>
-    <url>/2021/01/10/day4/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p66"><a href="#p66" class="headerlink" title="p66"></a>p66</h4><p>something in ‘ ‘ is a character(一个字符)</p>
-<p>or something in “ “is a string(一个字符串)</p>
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
       </tags>
   </entry>
 </search>
