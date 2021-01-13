@@ -140,4 +140,21 @@
         <tag>learning</tag>
       </tags>
   </entry>
+  <entry>
+    <title>day7</title>
+    <url>/2021/01/14/d7/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="P90"><a href="#P90" class="headerlink" title="P90"></a>P90</h4><blockquote>
+<p>大部分C函数都有一个返回值<br>printf()函数也有一个返回值，它返回打印字符的个数。如果有输出错误， printf()则返回一个负值（printf()的旧版本会返回不同的值）。<br>printf()的返回值是其打印输出功能的附带用途，通常很少用到，但在检查输出错误时可能会用到（如，在写入文件时很常用）。如果一张已满的CD或DVD拒绝写入时，程序应该采取相应的行动，例如终端蜂鸣30秒。</p>
+</blockquote>
+<h4 id="p92"><a href="#p92" class="headerlink" title="p92"></a>p92</h4><blockquote>
+<p>如果用scanf()读取基本变量类型的值，在变量名前加上一个&amp;；<br>如果用scanf()把字符串读入字符数组中，不要使用&amp;。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
 </search>
