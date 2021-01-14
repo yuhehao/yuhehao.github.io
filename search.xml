@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>day2</title>
-    <url>/2021/01/08/d2/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
-<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
-</blockquote>
-<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
-<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
-</blockquote>
-<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
-<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
-</blockquote>
+    <title>The First Blog</title>
+    <url>/2021/01/05/The-First-Blog/</url>
+    <content><![CDATA[<p>The last day of the exam and I can go back to Tianjin soon. </p>
+<p><code>PS:</code> This website which uses <code>hexo</code> is set up by the help of jjc and <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a></p>
+<p>thanks!</p>
 ]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
-      </tags>
   </entry>
   <entry>
     <title>Build Environment</title>
@@ -39,12 +27,56 @@
       </tags>
   </entry>
   <entry>
-    <title>The First Blog</title>
-    <url>/2021/01/05/The-First-Blog/</url>
-    <content><![CDATA[<p>The last day of the exam and I can go back to Tianjin soon. </p>
-<p><code>PS:</code> This website which uses <code>hexo</code> is set up by the help of jjc and <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a></p>
-<p>thanks!</p>
+    <title>day6</title>
+    <url>/2021/01/13/d6/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p81-p85"><a href="#p81-p85" class="headerlink" title="p81-p85"></a>p81-p85</h4><p>Although I think I cann’t remember so much.</p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210113012910471.png" alt="printf"></p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210113134259235.png" alt="image-20210113134259235"></p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210113134319669.png" alt="image-20210113134319669"></p>
 ]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>day7</title>
+    <url>/2021/01/14/d7/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="P90"><a href="#P90" class="headerlink" title="P90"></a>P90</h4><blockquote>
+<p>大部分C函数都有一个返回值<br>printf()函数也有一个返回值，它返回打印字符的个数。如果有输出错误， printf()则返回一个负值（printf()的旧版本会返回不同的值）。<br>printf()的返回值是其打印输出功能的附带用途，通常很少用到，但在检查输出错误时可能会用到（如，在写入文件时很常用）。如果一张已满的CD或DVD拒绝写入时，程序应该采取相应的行动，例如终端蜂鸣30秒。</p>
+</blockquote>
+<h4 id="p92"><a href="#p92" class="headerlink" title="p92"></a>p92</h4><blockquote>
+<p>如果用scanf()读取基本变量类型的值，在变量名前加上一个&amp;；<br>如果用scanf()把字符串读入字符数组中，不要使用&amp;。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>day2</title>
+    <url>/2021/01/08/d2/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
+<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
+</blockquote>
+<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
+<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
+</blockquote>
+<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
+<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
   </entry>
   <entry>
     <title>day3</title>
@@ -64,8 +96,26 @@
         <category>web</category>
       </categories>
       <tags>
-        <tag>learning</tag>
         <tag>trying</tag>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>day8</title>
+    <url>/2021/01/14/d8/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="P104"><a href="#P104" class="headerlink" title="P104"></a>P104</h4><p>no <code>;</code> after while and some <code>;</code> in while</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(True)</span><br><span class="line">&#123;</span><br><span class="line">    line1;</span><br><span class="line">    line2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="p105"><a href="#p105" class="headerlink" title="p105"></a>p105</h4><p>pow(a,b) = a**b   //#include&lt;math.h&gt;</p>
+<h4 id="p110"><a href="#p110" class="headerlink" title="p110"></a>p110</h4><p>int /int = int ;</p>
+<p>float/float = float ;</p>
+<p>float/int = float ;</p>
+<p>int/float = float ;</p>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
       </tags>
   </entry>
   <entry>
@@ -121,39 +171,7 @@
         <category>web</category>
       </categories>
       <tags>
-        <tag>learning</tag>
         <tag>trying</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>day6</title>
-    <url>/2021/01/13/d6/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p81-p85"><a href="#p81-p85" class="headerlink" title="p81-p85"></a>p81-p85</h4><p>Although I think I cann’t remember so much.</p>
-<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210113012910471.png" alt="printf"></p>
-<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210113134259235.png" alt="image-20210113134259235"></p>
-<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210113134319669.png" alt="image-20210113134319669"></p>
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>day7</title>
-    <url>/2021/01/14/d7/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="P90"><a href="#P90" class="headerlink" title="P90"></a>P90</h4><blockquote>
-<p>大部分C函数都有一个返回值<br>printf()函数也有一个返回值，它返回打印字符的个数。如果有输出错误， printf()则返回一个负值（printf()的旧版本会返回不同的值）。<br>printf()的返回值是其打印输出功能的附带用途，通常很少用到，但在检查输出错误时可能会用到（如，在写入文件时很常用）。如果一张已满的CD或DVD拒绝写入时，程序应该采取相应的行动，例如终端蜂鸣30秒。</p>
-</blockquote>
-<h4 id="p92"><a href="#p92" class="headerlink" title="p92"></a>p92</h4><blockquote>
-<p>如果用scanf()读取基本变量类型的值，在变量名前加上一个&amp;；<br>如果用scanf()把字符串读入字符数组中，不要使用&amp;。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
         <tag>learning</tag>
       </tags>
   </entry>
