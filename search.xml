@@ -175,4 +175,21 @@
         <tag>learning</tag>
       </tags>
   </entry>
+  <entry>
+    <title>day9</title>
+    <url>/2021/01/18/d9/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><p><code>++i</code> with <code>i++</code></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1</span> , b = <span class="number">1</span> ; </span><br><span class="line">    <span class="keyword">int</span> a1 ,b1 ;</span><br><span class="line">    a1 = a++;</span><br><span class="line">    b1 = ++b;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a a1 b b1 \n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%1d %2d %1d %2d\n&quot;</span>,a,a1,b,b1);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">a a1 b b1 </span><br><span class="line">2  1 2  2</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>When  n++  is part of an expression, you can think of it as meaning “use  n ; then increment it.” On the other hand,  ++n  means “increment  n ; then use it.”   </p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
 </search>
