@@ -27,9 +27,89 @@
       </tags>
   </entry>
   <entry>
+    <title>day2</title>
+    <url>/2021/01/08/d2/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
+<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
+</blockquote>
+<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
+<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
+</blockquote>
+<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
+<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>README of program</title>
+    <url>/2021/01/26/README/</url>
+    <content><![CDATA[<p>Before you run this program ,you need to start the game and change it to “冒险—挑战—最后一关—下一步”like this picture.<img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/2021-01-26151622.png" alt="2021-01-26151622"></p>
+<p>and run this program .It can replace you to finish “闯关”.Its principle depends on <code>PyUserInput</code>.And you can input int to set the cycle index.</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>trying</tag>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>day8</title>
+    <url>/2021/01/14/d8/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="P104"><a href="#P104" class="headerlink" title="P104"></a>P104</h4><p>no <code>;</code> after while and some <code>;</code> in while</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(True)</span><br><span class="line">&#123;</span><br><span class="line">    line1;</span><br><span class="line">    line2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="p105"><a href="#p105" class="headerlink" title="p105"></a>p105</h4><p>pow(a,b) = a**b   //#include&lt;math.h&gt;</p>
+<h4 id="p110"><a href="#p110" class="headerlink" title="p110"></a>p110</h4><p>int /int = int ;</p>
+<p>float/float = float ;</p>
+<p>float/int = float ;</p>
+<p>int/float = float ;</p>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>day12</title>
+    <url>/2021/01/26/d12/</url>
+    <content><![CDATA[<p>while </p>
+<p>for </p>
+<p>do while</p>
+<p>A typical  while  loop design looks like this:  </p>
+<p>​    get first value<br>​    while (value meets test)<br>​        {</p>
+<p>​            process the value</p>
+<p>​            get next value</p>
+<p>​        }   </p>
+<p> A  for  loop doing the same thing would look like this:  </p>
+<p>​    for (get first value; value meets test; get next value)</p>
+<p>​        process the value;</p>
+<p>if(expression)</p>
+<p>statement;</p>
+<p><code>getchar()</code> </p>
+<p><code>putchar()</code></p>
+<p><code>ctype.h</code></p>
+<p>else if in C like elif in python</p>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>day6</title>
     <url>/2021/01/13/d6/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p81-p85"><a href="#p81-p85" class="headerlink" title="p81-p85"></a>p81-p85</h4><p>Although I think I cann’t remember so much.</p>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p81-p85"><a href="#p81-p85" class="headerlink" title="p81-p85"></a>p81-p85</h4><p>Although I think I can’t remember so much.</p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210113012910471.png" alt="printf"></p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210113134259235.png" alt="image-20210113134259235"></p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210113134319669.png" alt="image-20210113134319669"></p>
@@ -59,16 +139,13 @@
       </tags>
   </entry>
   <entry>
-    <title>day2</title>
-    <url>/2021/01/08/d2/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
-<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
-</blockquote>
-<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
-<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
-</blockquote>
-<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
-<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
+    <title>day9</title>
+    <url>/2021/01/18/d9/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><p><code>++i</code> with <code>i++</code></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1</span> , b = <span class="number">1</span> ; </span><br><span class="line">    <span class="keyword">int</span> a1 ,b1 ;</span><br><span class="line">    a1 = a++;</span><br><span class="line">    b1 = ++b;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a a1 b b1 \n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%1d %2d %1d %2d\n&quot;</span>,a,a1,b,b1);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">a a1 b b1 </span><br><span class="line">2  1 2  2</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>When  n++  is part of an expression, you can think of it as meaning “use  n ; then increment it.” On the other hand,  ++n  means “increment  n ; then use it.”   </p>
 </blockquote>
 ]]></content>
       <categories>
@@ -98,45 +175,6 @@
       <tags>
         <tag>trying</tag>
         <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>day8</title>
-    <url>/2021/01/14/d8/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="P104"><a href="#P104" class="headerlink" title="P104"></a>P104</h4><p>no <code>;</code> after while and some <code>;</code> in while</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(True)</span><br><span class="line">&#123;</span><br><span class="line">    line1;</span><br><span class="line">    line2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="p105"><a href="#p105" class="headerlink" title="p105"></a>p105</h4><p>pow(a,b) = a**b   //#include&lt;math.h&gt;</p>
-<h4 id="p110"><a href="#p110" class="headerlink" title="p110"></a>p110</h4><p>int /int = int ;</p>
-<p>float/float = float ;</p>
-<p>float/int = float ;</p>
-<p>int/float = float ;</p>
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/01/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Diary</category>
-      </categories>
-      <tags>
-        <tag>Testing</tag>
-        <tag>Another Tag</tag>
       </tags>
   </entry>
   <entry>
@@ -176,20 +214,24 @@
       </tags>
   </entry>
   <entry>
-    <title>day9</title>
-    <url>/2021/01/18/d9/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><p><code>++i</code> with <code>i++</code></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1</span> , b = <span class="number">1</span> ; </span><br><span class="line">    <span class="keyword">int</span> a1 ,b1 ;</span><br><span class="line">    a1 = a++;</span><br><span class="line">    b1 = ++b;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a a1 b b1 \n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%1d %2d %1d %2d\n&quot;</span>,a,a1,b,b1);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">a a1 b b1 </span><br><span class="line">2  1 2  2</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>When  n++  is part of an expression, you can think of it as meaning “use  n ; then increment it.” On the other hand,  ++n  means “increment  n ; then use it.”   </p>
-</blockquote>
+    <title>Hello World</title>
+    <url>/2021/01/05/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>C</category>
+        <category>Diary</category>
       </categories>
       <tags>
-        <tag>learning</tag>
+        <tag>Testing</tag>
+        <tag>Another Tag</tag>
       </tags>
   </entry>
 </search>
