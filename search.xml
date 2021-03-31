@@ -234,4 +234,54 @@
         <tag>Another Tag</tag>
       </tags>
   </entry>
+  <entry>
+    <title>day16</title>
+    <url>/2021/01/28/d16/</url>
+    <content><![CDATA[<h3 id="logic-Operators"><a href="#logic-Operators" class="headerlink" title="logic Operators"></a>logic Operators</h3><p>&amp;&amp;   and </p>
+<p>||    or </p>
+<p>  !     not</p>
+<blockquote>
+<p>Logical Expressions:<br>expression1 &amp;&amp; expression2  is true if and only if both expressions are true.  expression1 || expression2  is true if either one or both expressions are true.  !expression  is true if the expression is false, and vice versa.  </p>
+</blockquote>
+<p>if <code>#include&lt;ios646.h&gt;</code>,then you can use and as &amp;&amp;,or as || not as ! .</p>
+<h3 id=""><a href="#" class="headerlink" title="?"></a>?</h3><p><code> x = (y &lt; 0) ? -y : y;  </code>    equal</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(y &lt; <span class="number">0</span>)</span><br><span class="line">    x = -y;</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	x = y;</span><br></pre></td></tr></table></figure>
+<p><code> max = (a &gt; b) ? a : b;  </code>   equal</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(a &gt; b)</span><br><span class="line">    max = a;</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	max = b;</span><br></pre></td></tr></table></figure>
+<h3 id="continue-and-break"><a href="#continue-and-break" class="headerlink" title="continue and break"></a><code>continue</code> and <code>break</code></h3><h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a><code>continue</code></h4><blockquote>
+<p>When encountered, it causes the rest of an iteration to be skipped and the next iteration to be started. If the  continue  statement is inside nested structures, it affects only the innermost structure containing it. </p>
+</blockquote>
+<h4 id="break"><a href="#break" class="headerlink" title="break"></a><code>break</code></h4><blockquote>
+<p>A  break  statement in a loop causes the program to break free of the loop that encloses it and to proceed to the next stage of the program.  If the  break  statement is inside nested loops, it affects only the innermost loop containing it.   </p>
+</blockquote>
+<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> (ch)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;a&#x27;</span>:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;b&#x27;</span>:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;babirusa, a wild pig of Malay\n&quot;</span>);</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;That&#x27;s a stumper!\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>equal </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(ch == a)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(ch == b)</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;babirusa, a wild pig of Malay\n&quot;</span>);</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;That&#x27;s a stumper!\n&quot;</span>);    </span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C_notes</title>
+    <url>/2021/03/29/note/</url>
+    <content><![CDATA[<p>int 128＝（2^64）*a+b，（式中a，b为unsigned long long）</p>
+<p>fgets=读入会包含最后的换行而gets不会，但是这是在Linux/Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃</p>
+<p>~(-1)  $\iff$True</p>
+<p>!(0)  $\iff$True</p>
+<p>gets(str) 读取一行至str，读入换行并舍弃</p>
+<p>fgets(str,n,stdin) stdin表示从标准输入读入，可改为从指定文件读入，fgets读到（n-1）个字符或者换行为止，将换行符存在str中。</p>
+<p>gets_s(str,n)若读到（n-1）个字符前读到换行符，读入并舍弃换行符；若读到（n-1）个字符时未读到换行符，将str首字符设置为0，读入并舍弃该行剩余所有。然后<strong>调用依赖实现的“处理函数”，可能中止或退出程序</strong>。</p>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+        <tag>notes</tag>
+      </tags>
+  </entry>
 </search>

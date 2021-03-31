@@ -22,20 +22,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="《C primer plus 》p27 如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。  p31 这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函">
+  <meta name="description" content="int 128＝（2^64）*a+b，（式中a，b为unsigned long long） fgets&#x3D;读入会包含最后的换行而gets不会，但是这是在Linux&#x2F;Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃 ~(-1)  $\iff$True !(0)  $\iff$True gets(str) 读取一行至str，读入换行并舍弃 fgets(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="day2">
-<meta property="og:url" content="http://example.com/2021/01/08/d2/index.html">
+<meta property="og:title" content="C_notes">
+<meta property="og:url" content="http://example.com/2021/03/29/note/index.html">
 <meta property="og:site_name" content="Hehy&#39;s Blog">
-<meta property="og:description" content="《C primer plus 》p27 如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。  p31 这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函">
+<meta property="og:description" content="int 128＝（2^64）*a+b，（式中a，b为unsigned long long） fgets&#x3D;读入会包含最后的换行而gets不会，但是这是在Linux&#x2F;Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃 ~(-1)  $\iff$True !(0)  $\iff$True gets(str) 读取一行至str，读入换行并舍弃 fgets(">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-07T16:49:48.607Z">
-<meta property="article:modified_time" content="2021-01-07T16:51:32.108Z">
+<meta property="article:published_time" content="2021-03-29T13:29:28.023Z">
+<meta property="article:modified_time" content="2021-03-31T06:29:25.901Z">
 <meta property="article:author" content="Hehy">
 <meta property="article:tag" content="learning">
+<meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/01/08/d2/">
+<link rel="canonical" href="http://example.com/2021/03/29/note/">
 
 
 <script id="page-configurations">
@@ -61,7 +62,7 @@
   padding: 1px 4px;
 }
 </style>
-  <title>day2 | Hehy's Blog</title>
+  <title>C_notes | Hehy's Blog</title>
   
 
 
@@ -215,7 +216,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/08/d2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/29/note/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -228,7 +229,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          day2
+          C_notes
         </h1>
 
         <div class="post-meta">
@@ -237,10 +238,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-01-08 00:49:48 / Modified: 00:51:32" itemprop="dateCreated datePublished" datetime="2021-01-08T00:49:48+08:00">2021-01-08</time>
+              <time title="Created: 2021-03-29 21:29:28" itemprop="dateCreated datePublished" datetime="2021-03-29T21:29:28+08:00">2021-03-29</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-03-31 14:29:25" itemprop="dateModified" datetime="2021-03-31T14:29:25+08:00">2021-03-31</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -257,7 +264,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>496</span>
+              <span>367</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -276,15 +283,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
-<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
-</blockquote>
-<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
-<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
-</blockquote>
-<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
-<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
-</blockquote>
+        <p>int 128＝（2^64）*a+b，（式中a，b为unsigned long long）</p>
+<p>fgets=读入会包含最后的换行而gets不会，但是这是在Linux/Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃</p>
+<p>~(-1)  $\iff$True</p>
+<p>!(0)  $\iff$True</p>
+<p>gets(str) 读取一行至str，读入换行并舍弃</p>
+<p>fgets(str,n,stdin) stdin表示从标准输入读入，可改为从指定文件读入，fgets读到（n-1）个字符或者换行为止，将换行符存在str中。</p>
+<p>gets_s(str,n)若读到（n-1）个字符前读到换行符，读入并舍弃换行符；若读到（n-1）个字符时未读到换行符，将str首字符设置为0，读入并舍弃该行剩余所有。然后<strong>调用依赖实现的“处理函数”，可能中止或退出程序</strong>。</p>
 
     </div>
 
@@ -325,6 +330,7 @@
           
           <div class="post-tags">
               <a href="/tags/learning/" rel="tag"><i class="fa fa-tag"></i> learning</a>
+              <a href="/tags/notes/" rel="tag"><i class="fa fa-tag"></i> notes</a>
           </div>
 
         
@@ -333,13 +339,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/01/06/set-website/" rel="prev" title="Set My Website Blog">
-      <i class="fa fa-chevron-left"></i> Set My Website Blog
+    <a href="/2021/01/28/d16/" rel="prev" title="day16">
+      <i class="fa fa-chevron-left"></i> day16
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/01/09/day3/" rel="next" title="day3">
-      day3 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -398,7 +401,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%80%8AC-primer-plus-%E3%80%8B"><span class="nav-number">1.</span> <span class="nav-text">《C primer plus 》</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#p27"><span class="nav-number">1.0.1.</span> <span class="nav-text">p27</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#p31"><span class="nav-number">1.0.2.</span> <span class="nav-text">p31</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#p32"><span class="nav-number">1.0.3.</span> <span class="nav-text">p32</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
