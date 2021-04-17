@@ -209,6 +209,101 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/09/day3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Hehy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hehy's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/09/day3/" class="post-title-link" itemprop="url">day3</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-01-09 01:33:33 / Modified: 01:35:15" itemprop="dateCreated datePublished" datetime="2021-01-09T01:33:33+08:00">2021-01-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>846</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p51"><a href="#p51" class="headerlink" title="p51"></a>p51</h4><p>there are some differences between C and python<br>for example  “ and ‘</p>
+<p><strong>something in “ “ is strings.</strong></p>
+<blockquote>
+<p>如果要把一个字符常量初始化为字母 A，不必背下 ASCII 码，用计算机语言很容易做到。通过以下初始化把字母A赋给grade即可：<br>char grade = ‘A’;<br>在C语言中，用单引号括起来的单个字符被称为字符常量（character constant）。编译器一发现’A’，就会将其转换成相应的代码值。单引号必不可少。下面还有一些其他的例子：<br>char broiled;  /* 声明一个char类型的变量 <em>/<br>broiled = ‘T’;  /</em> 为其赋值，正确 <em>/<br>broiled = T; /</em> 错误！此时T是一个变量 <em>/<br>broiled = “T”; /</em> 错误！此时”T”是一个字符串 <em>/<br>如上所示，如果省略单引号，编译器认为T是一个变量名；如果把T用双引号括起来，编译器则认为”T”是一个字符串。字符串的内容将在第4章中介绍。<br>char grade = 65; /</em> 对于ASCII，这样做没问题，但这是一种不好的编程风格 */在本例中，虽然65是int类型，但是它在char类型能表示的范围内，所以将其赋值给grade没问题。由于65是字母A对应的ASCII码，因此本例是把A赋给grade。注意，能这样做的前提是系统使用ASCII码。其实，用’A’代替65才是较为妥当的做法，这样在任何系统中都不会出问题。因此，最好使用字符常量，而不是数字代码值。</p>
+</blockquote>
+<blockquote>
+<p>本来’B’对应的数值66储存在32位的存储单元中，现在却可以储存在8位的存储单元中（grade）。利用字符常量的这种特性，可以定义一个字符常量’FATE’，即把4个独立的8位ASCII码储存在一个32位存储单元中。如果把这样的字符常量赋给char类型变量grade，只有最后8位有效。因此，grade的值是’E’。</p>
+</blockquote>
+<h2 id="website"><a href="#website" class="headerlink" title="website"></a>website</h2><p>update // friends ,about,the icon of tag and the heart icon</p>
+
+      
+    </div>
+
+    
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/08/d2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -728,7 +823,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -767,6 +862,9 @@
           <a href="/2021/03/29/note/" title="2021&#x2F;03&#x2F;29&#x2F;note&#x2F;">C_notes</a>
         </li>
         <li class="links-of-recent-posts-item">
+          <a href="/2021/03/29/C_note/" title="2021&#x2F;03&#x2F;29&#x2F;C_note&#x2F;">C_notes</a>
+        </li>
+        <li class="links-of-recent-posts-item">
           <a href="/2021/01/28/d16/" title="2021&#x2F;01&#x2F;28&#x2F;d16&#x2F;">day16</a>
         </li>
         <li class="links-of-recent-posts-item">
@@ -774,9 +872,6 @@
         </li>
         <li class="links-of-recent-posts-item">
           <a href="/2021/01/26/README/" title="2021&#x2F;01&#x2F;26&#x2F;README&#x2F;">README of program</a>
-        </li>
-        <li class="links-of-recent-posts-item">
-          <a href="/2021/01/18/d9/" title="2021&#x2F;01&#x2F;18&#x2F;d9&#x2F;">day9</a>
         </li>
     </ul>
   </div>

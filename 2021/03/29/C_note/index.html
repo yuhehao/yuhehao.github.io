@@ -22,15 +22,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hehy&#39;s Blog">
-<meta property="og:url" content="http://example.com/categories/Diary/index.html">
+  <meta name="description" content="int 128＝（2^64）*a+b，（式中a，b为unsigned long long） fgets&#x3D;读入会包含最后的换行而gets不会，但是这是在Linux&#x2F;Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃 ~(-1)  $\iff$True !(0)  $\iff$True gets(str) 读取一行至str，读入换行并舍弃 fgets(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C_notes">
+<meta property="og:url" content="http://example.com/2021/03/29/C_note/index.html">
 <meta property="og:site_name" content="Hehy&#39;s Blog">
+<meta property="og:description" content="int 128＝（2^64）*a+b，（式中a，b为unsigned long long） fgets&#x3D;读入会包含最后的换行而gets不会，但是这是在Linux&#x2F;Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃 ~(-1)  $\iff$True !(0)  $\iff$True gets(str) 读取一行至str，读入换行并舍弃 fgets(">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-29T13:29:28.023Z">
+<meta property="article:modified_time" content="2021-03-31T06:29:25.901Z">
 <meta property="article:author" content="Hehy">
+<meta property="article:tag" content="learning">
+<meta property="article:tag" content="notes">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/categories/Diary/">
+<link rel="canonical" href="http://example.com/2021/03/29/C_note/">
 
 
 <script id="page-configurations">
@@ -38,7 +44,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
@@ -56,7 +62,7 @@
   padding: 1px 4px;
 }
 </style>
-  <title>Category: Diary | Hehy's Blog</title>
+  <title>C_notes | Hehy's Blog</title>
   
 
 
@@ -203,51 +209,149 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Diary
-          <small>Category</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/29/C_note/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Hehy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hehy's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          C_notes
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-03-29 21:29:28" itemprop="dateCreated datePublished" datetime="2021-03-29T21:29:28+08:00">2021-03-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-03-31 14:29:25" itemprop="dateModified" datetime="2021-03-31T14:29:25+08:00">2021-03-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>367</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+        <p>int 128＝（2^64）*a+b，（式中a，b为unsigned long long）</p>
+<p>fgets=读入会包含最后的换行而gets不会，但是这是在Linux/Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃</p>
+<p>~(-1)  $\iff$True</p>
+<p>!(0)  $\iff$True</p>
+<p>gets(str) 读取一行至str，读入换行并舍弃</p>
+<p>fgets(str,n,stdin) stdin表示从标准输入读入，可改为从指定文件读入，fgets读到（n-1）个字符或者换行为止，将换行符存在str中。</p>
+<p>gets_s(str,n)若读到（n-1）个字符前读到换行符，读入并舍弃换行符；若读到（n-1）个字符时未读到换行符，将str首字符设置为0，读入并舍弃该行剩余所有。然后<strong>调用依赖实现的“处理函数”，可能中止或退出程序</strong>。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------------- The end -------------</div>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-01-05T20:08:10+08:00"
-              content="2021-01-05">
-          01-05
-        </time>
+    <div class="post-widgets">
+      <div id="needsharebutton-postbottom">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
       </div>
+    </div>
+        
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/01/05/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
           </a>
-      </div>
-
-    </header>
-  </article>
-
+        </div>
     </div>
   </div>
-  
-  
-  
 
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/learning/" rel="tag"><i class="fa fa-tag"></i> learning</a>
+              <a href="/tags/notes/" rel="tag"><i class="fa fa-tag"></i> notes</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/01/28/d16/" rel="prev" title="day16">
+      <i class="fa fa-chevron-left"></i> day16
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/03/29/note/" rel="next" title="C_notes">
+      C_notes <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
