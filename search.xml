@@ -306,10 +306,10 @@
   <entry>
     <title>Discrete Mathematics</title>
     <url>/2021/04/18/Discrete%20Mathematics/</url>
-    <content><![CDATA[<h2 id="离散数学-Discrete-Mathematics"><a href="#离散数学-Discrete-Mathematics" class="headerlink" title="离散数学 Discrete Mathematics"></a>离散数学 Discrete Mathematics</h2><h4 id="命题-proposition"><a href="#命题-proposition" class="headerlink" title="命题 proposition"></a>命题 proposition</h4><p>A proposition is a declarative sentence that is either true or false.</p>
+    <content><![CDATA[<h2 id="离散数学-Discrete-Mathematics"><a href="#离散数学-Discrete-Mathematics" class="headerlink" title="离散数学 Discrete Mathematics"></a>离散数学 Discrete Mathematics</h2><h3 id="part-1-proposition-and-logic"><a href="#part-1-proposition-and-logic" class="headerlink" title="part 1 proposition and logic"></a>part 1 proposition and logic</h3><h4 id="命题-proposition"><a href="#命题-proposition" class="headerlink" title="命题 proposition"></a>命题 proposition</h4><p>A proposition is a declarative sentence that is either true or false.</p>
 <h4 id="真值-truth-value"><a href="#真值-truth-value" class="headerlink" title="真值 truth value"></a>真值 truth value</h4><h4 id="Simple-Proposition"><a href="#Simple-Proposition" class="headerlink" title="Simple Proposition:"></a>Simple Proposition:</h4><p>​    cannot be broken into 2 or more propositions</p>
 <h4 id="Compound-Proposition"><a href="#Compound-Proposition" class="headerlink" title="Compound Proposition:"></a>Compound Proposition:</h4><p>​    not simple</p>
-<h4 id="Negation-否定-¬"><a href="#Negation-否定-¬" class="headerlink" title="Negation (否定)  ¬"></a>Negation (否定)  ¬</h4><h4 id="conjunction-合取-and-wedge"><a href="#conjunction-合取-and-wedge" class="headerlink" title="conjunction (合取) and  $\wedge $"></a>conjunction (合取) and  $\wedge $</h4><h4 id="Disjunction-析取-or-vee"><a href="#Disjunction-析取-or-vee" class="headerlink" title="Disjunction (析取)  or $\vee$"></a>Disjunction (析取)  or $\vee$</h4><h4 id="Implication-→"><a href="#Implication-→" class="headerlink" title="Implication (→)"></a>Implication (→)</h4><h4 id="Bi-Implication-↔-："><a href="#Bi-Implication-↔-：" class="headerlink" title="Bi-Implication (↔)："></a>Bi-Implication (↔)：</h4><p>​    A$\leftrightarrow$B $\Leftrightarrow$(A$\rightarrow$B)$\wedge $(B$\rightarrow$A)</p>
+<h4 id="Negation-否定-neg"><a href="#Negation-否定-neg" class="headerlink" title="Negation (否定)  $\neg$"></a>Negation (否定)  $\neg$</h4><h4 id="conjunction-合取-and-wedge"><a href="#conjunction-合取-and-wedge" class="headerlink" title="conjunction (合取) and  $\wedge $"></a>conjunction (合取) and  $\wedge $</h4><h4 id="Disjunction-析取-or-vee"><a href="#Disjunction-析取-or-vee" class="headerlink" title="Disjunction (析取)  or $\vee$"></a>Disjunction (析取)  or $\vee$</h4><h4 id="Implication-→"><a href="#Implication-→" class="headerlink" title="Implication (→)"></a>Implication (→)</h4><h4 id="Bi-Implication-↔-："><a href="#Bi-Implication-↔-：" class="headerlink" title="Bi-Implication (↔)："></a>Bi-Implication (↔)：</h4><p>​    A$\leftrightarrow$B $\Leftrightarrow$(A$\rightarrow$B)$\wedge $(B$\rightarrow$A)</p>
 <h4 id="Precedence（优先级）："><a href="#Precedence（优先级）：" class="headerlink" title="Precedence（优先级）："></a>Precedence（优先级）：</h4><p>​      ¬，$\wedge $，$\vee$，$\rightarrow$，$\leftrightarrow$</p>
 <h4 id="Well-Formed-Formulas"><a href="#Well-Formed-Formulas" class="headerlink" title="Well-Formed Formulas :"></a>Well-Formed Formulas :</h4><p>​    =propositional formulas=formulas</p>
 <h4 id="Translation"><a href="#Translation" class="headerlink" title="Translation:"></a>Translation:</h4><ul>
@@ -332,6 +332,69 @@
 <h4 id="Logically-equivalent"><a href="#Logically-equivalent" class="headerlink" title="Logically equivalent:"></a>Logically equivalent:</h4><p>​    A and B always has the same truth table for every truth assignment(of p1,p2,…,p$_n$)</p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418022500577.png" alt="image-20210418022500577"></p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418022528955.png" alt="image-20210418022528955"></p>
+<h4 id="Tautological-Implications-Rightarrow"><a href="#Tautological-Implications-Rightarrow" class="headerlink" title="Tautological Implications $\Rightarrow$ :"></a>Tautological Implications $\Rightarrow$ :</h4><p>​    How to prove A $\Rightarrow$B:</p>
+<ul>
+<li>A$^{-1}$(T)$\subseteq$B$^{-1}$(T);</li>
+<li>A$\rightarrow$B is a tautology;</li>
+<li>A$\and$$\neg$B is a contradiction</li>
+</ul>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418143455223.png" alt="image-20210418143455223"></p>
+<h4 id="个体和谓词-Individual-and-Predicate"><a href="#个体和谓词-Individual-and-Predicate" class="headerlink" title="个体和谓词 Individual and Predicate"></a>个体和谓词 Individual and Predicate</h4><h4 id="universal-quantifier-forall-and-existential-quantifier-exist"><a href="#universal-quantifier-forall-and-existential-quantifier-exist" class="headerlink" title="universal quantifier $\forall$ and existential quantifier$\exist$"></a>universal quantifier $\forall$ and existential quantifier$\exist$</h4><h4 id="Types-of-WFFs-1"><a href="#Types-of-WFFs-1" class="headerlink" title="Types of WFFs:"></a>Types of WFFs:</h4><ul>
+<li><p>logically valid : always true</p>
+</li>
+<li><p>unsatisfiable : always false</p>
+</li>
+<li><p>satisfiable : it is true for at least one truth assignment</p>
+<p>Prop:</p>
+</li>
+<li><p>$\forall$x(A(x)$\and$B(x))$\equiv$$\forall$xA(x)$\and$$\forall$xB(x)</p>
+</li>
+<li><p>$\exist$x(A(x)$\or$B(x))$\equiv$$$\exist$$xA(x)$\or$$$\exist$$xB(x)</p>
+</li>
+</ul>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418145546880.png" alt="image-20210418145546880"></p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418145604913.png" alt="image-20210418145604913"></p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418145618260.png" alt="image-20210418145618260"></p>
+<h3 id="part-2-set-theory"><a href="#part-2-set-theory" class="headerlink" title="part 2 set theory"></a>part 2 set theory</h3><h3 id="part-3-combinatorial-mathematics"><a href="#part-3-combinatorial-mathematics" class="headerlink" title="part 3 combinatorial mathematics"></a>part 3 combinatorial mathematics</h3><h4 id="Combinations-of-set"><a href="#Combinations-of-set" class="headerlink" title="Combinations of set:"></a>Combinations of set:</h4><ul>
+<li> Let $𝐴$ = {$a_1$, … , $a_𝑛$} be a finite set. Let $k$ $\in$ {0,1, … , 𝑛}. k-combination of  $𝐴$ without repetition: an $k$-subset of $𝐴$.</li>
+<li>$$ \binom{n}{k} = \frac{n!}{k!(n-k)!} $$</li>
+</ul>
+<h4 id="Permutations-of-set"><a href="#Permutations-of-set" class="headerlink" title="Permutations of set:"></a>Permutations of set:</h4><ul>
+<li>Let $𝐴$ be a finite set of 𝑛 elements. Let $k$ $\in$ [n].$k$-permutation of $𝐴$: a sequence $a_1$, $a_2$, ⋯ , $a_k$ of $k$ distinct elements of $𝐴$.</li>
+<li>$$A_{n}^{k} = \frac{n!}{(n-k)!}$$</li>
+</ul>
+<h4 id="Multiset"><a href="#Multiset" class="headerlink" title="Multiset:"></a>Multiset:</h4><p>​    A multiset is collection of elements which are not necessarily different from each other.</p>
+<ul>
+<li><p>An element 𝑥 $\in$ 𝐴 has multiplicity 𝑚 if it appears 𝑚 times in the multiset 𝐴.</p>
+</li>
+<li><p>A multiset 𝐴 is called an 𝒏-multiset if it has 𝑛 elements.</p>
+</li>
+<li><p>$$A = {n_{1}\cdot a_{1},n_{2}\cdot a_{2},\ldots,n_{k}\cdot a_{k}}$$ : an $$(n_1 + n_2 +\cdots +n_k)$$-multiset where the elements $$a_1 , a_2 ,\dots ,a_k$$ has multiplicities $$n_1 , n_2 ,\dots ,n_k$$, respectively.</p>
+</li>
+<li><ul>
+<li><p>𝑇 = {𝑡1 ⋅ 𝑎1, 𝑡2 ⋅ 𝑎2, … , 𝑡𝑘 ⋅ 𝑎𝑘} is called an 𝒓-subset of 𝐴 if</p>
+<p>0 ≤ 𝑡𝑖 ≤ 𝑛𝑖 for every 𝑖 ∈ [𝑘], and</p>
+<p>𝑡1 + 𝑡2 + ⋯ + 𝑡𝑘 = 𝑟</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Inverse-Binomial-Transform"><a href="#Inverse-Binomial-Transform" class="headerlink" title="Inverse Binomial Transform:"></a>Inverse Binomial Transform:</h4><p>​    if $$a_n = \sum_{k=s}^{n}\binom{n}{k}b_k$$ then $$b_n = \sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}a_k$$ (n$\geqslant$s)</p>
+<ul>
+<li>prove for <strong>Inverse Binomial Transform</strong>:</li>
+<li><ul>
+<li>lemma:未完待续</li>
+<li>lemma:</li>
+<li>lemma:</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418165343946.png" alt="image-20210418165343946"></p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210419005421092.png" alt="image-20210419005421092"></p>
+<p>T-path</p>
+<p>加括号，划分，斯特林，</p>
+<p>Let 𝐴𝐴 = 𝑛𝑛1 ⋅ 𝑎𝑎1, 𝑛𝑛2 ⋅ 𝑎𝑎2, … , 𝑛𝑛𝑘𝑘 ⋅ 𝑎𝑎𝑘𝑘 be a multiset. Then 𝐴𝐴has exactly 𝑛𝑛1+𝑛𝑛2+⋯+𝑛𝑛𝑘𝑘 !permutations.</p>
+<p>The number of natural number solutions of the equation 𝑥𝑥1 + 𝑥𝑥2 + ⋯ + 𝑥𝑥𝑛𝑛 = 𝑟𝑟 is 𝑛𝑛 + 𝑟𝑟 − 1</p>
 ]]></content>
       <categories>
         <category>maths</category>
