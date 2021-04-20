@@ -240,7 +240,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-04-20 00:55:11" itemprop="dateModified" datetime="2021-04-20T00:55:11+08:00">2021-04-20</time>
+                <time title="Modified: 2021-04-20 23:40:19" itemprop="dateModified" datetime="2021-04-20T23:40:19+08:00">2021-04-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -258,14 +258,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>7.5k</span>
+              <span>11k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>7 mins.</span>
+              <span>10 mins.</span>
             </span>
 
         </div>
@@ -281,7 +281,7 @@
 <h4 id="真值-truth-value"><a href="#真值-truth-value" class="headerlink" title="真值 truth value"></a>真值 truth value</h4><h4 id="Simple-Proposition"><a href="#Simple-Proposition" class="headerlink" title="Simple Proposition:"></a>Simple Proposition:</h4><p>​    cannot be broken into 2 or more propositions</p>
 <h4 id="Compound-Proposition"><a href="#Compound-Proposition" class="headerlink" title="Compound Proposition:"></a>Compound Proposition:</h4><p>​    not simple</p>
 <h4 id="Negation-否定-neg"><a href="#Negation-否定-neg" class="headerlink" title="Negation (否定)  $\neg$"></a>Negation (否定)  $\neg$</h4><h4 id="conjunction-合取-and-wedge"><a href="#conjunction-合取-and-wedge" class="headerlink" title="conjunction (合取) and  $\wedge $"></a>conjunction (合取) and  $\wedge $</h4><h4 id="Disjunction-析取-or-vee"><a href="#Disjunction-析取-or-vee" class="headerlink" title="Disjunction (析取)  or $\vee$"></a>Disjunction (析取)  or $\vee$</h4><h4 id="Implication-→"><a href="#Implication-→" class="headerlink" title="Implication (→)"></a>Implication (→)</h4><h4 id="Bi-Implication-↔-："><a href="#Bi-Implication-↔-：" class="headerlink" title="Bi-Implication (↔)："></a>Bi-Implication (↔)：</h4><p>​    A$\leftrightarrow$B $\Leftrightarrow$(A$\rightarrow$B)$\wedge $(B$\rightarrow$A)</p>
-<h4 id="Precedence（优先级）："><a href="#Precedence（优先级）：" class="headerlink" title="Precedence（优先级）："></a>Precedence（优先级）：</h4><p>​      ¬，$\wedge $，$\vee$，$\rightarrow$，$\leftrightarrow$</p>
+<h4 id="Precedence（优先级）："><a href="#Precedence（优先级）：" class="headerlink" title="Precedence（优先级）："></a>Precedence（优先级）：</h4><p>​      $ \neg$，$\wedge $，$\vee$，$\rightarrow$，$\leftrightarrow$</p>
 <h4 id="Well-Formed-Formulas"><a href="#Well-Formed-Formulas" class="headerlink" title="Well-Formed Formulas :"></a>Well-Formed Formulas :</h4><p>​    =propositional formulas=formulas</p>
 <h4 id="Translation"><a href="#Translation" class="headerlink" title="Translation:"></a>Translation:</h4><ul>
 <li>if A then B   $\Leftrightarrow$  A$\rightarrow$B</li>
@@ -316,19 +316,28 @@
 <li><p>unsatisfiable : always false</p>
 </li>
 <li><p>satisfiable : it is true for at least one truth assignment</p>
+</li>
+<li><p>important:<img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420213108749.png" alt="image-20210420213108749"></p>
 <p>Prop:</p>
 </li>
 <li><p>$$\forall x(A(x) \and B(x)) \equiv  \forall xA(x) \and \forall xB(x)$$</p>
 </li>
-<li><p>$$\exist x(A(x)\or B(x))\equiv \exists xA(x)\or \exists xB(x)$$</p>
+<li><p>$$\exists x(A(x) \or B(x)) \equiv \exists xA(x) \or \exists xB(x)$$</p>
 </li>
 </ul>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418145546880.png" alt="image-20210418145546880"></p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418145604913.png" alt="image-20210418145604913"></p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418145618260.png" alt="image-20210418145618260"></p>
+<p>(mid,2019)$$\forall x(\forall y(N(x,y) \to \forall z(G(z,x) \land G(z, y) \lor D(z, x) \lor D(z,y))))$$</p>
 <h3 id="part-2-set-theory"><a href="#part-2-set-theory" class="headerlink" title="part 2 set theory"></a>part 2 set theory</h3><p>Principle of Inclusion-Exclusion</p>
 <p>cover</p>
-<p>partition is dis joint cover</p>
+<p>partition is disjoint cover</p>
+<p>proper:真子集</p>
+<p>complement:补集</p>
+<p>$p(A)={x|x\sube A}$:the <strong>power set</strong>  of A</p>
+<p>disjoint:$$A\cap B\neq \emptyset$$</p>
+<p>XOR$\oplus$: $$A\oplus B =(A-B)\cup(B-A)$$: the symmetric difference of A and B.</p>
+<p>时间原因，写的仓促，详见<a target="_blank" rel="noopener" href="https://vixbob.moe/20.html">vixbob’s set theory</a></p>
 <h3 id="part-3-combinatorial-mathematics"><a href="#part-3-combinatorial-mathematics" class="headerlink" title="part 3 combinatorial mathematics"></a>part 3 combinatorial mathematics</h3><h4 id="Combinations-of-set"><a href="#Combinations-of-set" class="headerlink" title="Combinations of set:"></a>Combinations of set:</h4><ul>
 <li> Let $𝐴$ = {$a_1$, … , $a_𝑛$} be a finite set. Let $k$ $\in$ {0,1, … , 𝑛}. k-combination of  $𝐴$ without repetition: an $k$-subset of $𝐴$.</li>
 <li>$$ \binom{n}{k} = \frac{n!}{k!(n-k)!} $$</li>
@@ -367,7 +376,7 @@
 <p>$$let \  {a_n},{b_n} \ be \ two \ sequences\ such\ that \ for\ all\ n\geqslant s,a_n=\sum_{k=s}^{n}\binom{n}{k}b_k.Then\ b_n=\sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}a_k\ (n\geqslant s)$$</p>
 </li>
 </ul>
-<p>$$<br>\begin{aligned}<br>\sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}a_k  &amp; = \sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}\sum_{i=s}^{k}\binom{k}{i}b_i \&amp; =\sum_{k=s}^{n}\sum_{i=s}^{k}(-1)^{n-k}\binom{n}{k}\binom{k}{i}b_i\&amp;=\sum_{i=s}^n\sum_{k=i}^n(-1)^{n-k}\binom{n}{k}\binom{k}{i}b_i\&amp;=b_n<br>\end{aligned}<br>$$</p>
+<p>$$<br>\begin{aligned}<br>\sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}a_k  &amp; = \sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}\sum_{i=s}^{k}\binom{k}{i}b_i \&amp; =\sum_{k=s}^{n}\sum_{i=s}^{k}(-1)^{n-k}\binom{n}{k}\binom{k}{i}b_i\&amp;=\sum_{i=s}^n\sum_{k=i}^n(-1)^{n-k}\binom{n}{k}\binom{k}{i}b_i\&amp;=b_n<br>\end{aligned}ss<br>$$</p>
 <p>背下来</p>
 <ul>
 <li>example:</li>
@@ -462,26 +471,121 @@ $$</code></pre>
 </ul>
 </li>
 </ul>
-<h4 id="Pigeonhole-Principle-鸽笼原理，又名抽屉原理"><a href="#Pigeonhole-Principle-鸽笼原理，又名抽屉原理" class="headerlink" title="Pigeonhole Principle 鸽笼原理，又名抽屉原理"></a>Pigeonhole Principle 鸽笼原理，又名抽屉原理</h4><p> example:<br>$$let\  n\in Z^+.Let\ A \sube{1,2,\ldots,2n}\ have\ n+1\ elements.Then\ \exists x,y\in A \ such \ that\ x|y.$$</p>
-<p>solve:</p>
-<p>​    ??????有待补充，分两个</p>
-<h4 id="linear-homogeneous-recurrence-relation-LNRR"><a href="#linear-homogeneous-recurrence-relation-LNRR" class="headerlink" title="linear homogeneous recurrence relation (LNRR)"></a>linear homogeneous recurrence relation (LNRR)</h4><h4 id="Examples-for-combinatorial-mathematics"><a href="#Examples-for-combinatorial-mathematics" class="headerlink" title="Examples for  combinatorial mathematics:"></a>Examples for  combinatorial mathematics:</h4><ul>
+<h4 id="Pigeonhole-Principle-鸽笼原理，又名抽屉原理"><a href="#Pigeonhole-Principle-鸽笼原理，又名抽屉原理" class="headerlink" title="Pigeonhole Principle 鸽笼原理，又名抽屉原理"></a>Pigeonhole Principle 鸽笼原理，又名抽屉原理</h4><p> example:<br>prove :$let\  n\in Z^+.Let\ A \sube{1,2,\ldots,2n}\ have\ n+1\ elements.Then\ \exists x,y\in A \ such \ that\ x|y.$$ </p>
+<p>answer: </p>
+<p>considering that $u\cdot 2^x$,$u\in[n]$ and $x\in N$.</p>
+<p>$\forall t \in {1,2,\dots,2n}$ can be written in the formal of $u\cdot 2^x$.</p>
+<p>we can consider the $u\in [n]$ as n boxes,and because A has (n+1) elements,so at least one boxes has two number which have the same u and they have the different x. 不妨设$X=u\cdot 2^x \ and\ Y=u\cdot 2^y$,</p>
+<p>so if(x&lt;y) X|Y;else if(x&gt;y) Y|X.</p>
+<p>QED.</p>
+<h4 id="linear-homogeneous-recurrence-relation-LNRR"><a href="#linear-homogeneous-recurrence-relation-LNRR" class="headerlink" title="linear homogeneous recurrence relation (LNRR)"></a>linear homogeneous recurrence relation (LNRR)</h4><p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420211406586.png" alt="image-20210420211406586"></p>
+<h4 id="Examples-for-combinatorial-mathematics"><a href="#Examples-for-combinatorial-mathematics" class="headerlink" title="Examples for  combinatorial mathematics:"></a>Examples for  combinatorial mathematics:</h4><ul>
 <li><p>$\binom{n+r-1}{r}$插板法一列“1”，插加号，两个加号之间“1”的数量为一个值</p>
 </li>
 <li><p>combinatorial equation:</p>
 <p>$$\binom{m+n}{r}=\sum_{k=0}^{r}\binom{m}{r-k}\cdot \binom{n}{k}\\binom{n+1}{r}=\binom{n}{r-1}+\binom{n}{r}\\binom{2n}{n}=\sum_{k=0}^{n}\binom{n}{k}^2\\binom{n}{k}\binom{k}{r}=\binom{n}{r}\binom{n-r}{k-r}$$</p>
 </li>
+<li><ul>
 <li><p>combinations of Multiset:</p>
-<p>r!/r_1!\cdotsr_n! \ \ (\sum_{r_i}=r)</p>
+<p>​        $\binom{n+r-1}{r}$ </p>
 </li>
-<li></li>
+<li><p>permutations of Multiset:</p>
+<p>​        $r!/r_1!\cdots r_n! \quad\ (\sum_{r_i}=r)$</p>
+</li>
+</ul>
+</li>
+<li><p>Principle of Inclusion-Exclusion: 注意反刨几次</p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420124102390.png" alt="image-20210420124102390"></p>
+</li>
+<li><p>$S_2(n,r)$ : the stirling number of the second kind ,is defined as the number of different ways of distributing n distinguishable objects into j indistinguishable boxes so that no box is empty.(n different balls into r indistinguishable boxes and no empty boxes)</p>
+<ul>
+<li><p>$$S_2(n,k) = S_2(n-1,k-1)+S_2(n-1.k)$$ </p>
+</li>
+<li><p>边界：$$S_2(n,0)=0;S_2(0,0)=1;S_2(n,n)=1(n\neq0)$$</p>
+</li>
+<li><ul>
+<li> 将新元素单独放入一个子集，有$S_2(n-1,k-1)$种方案；</li>
+<li>将新元素放入一个现有的非空子集，有$kS_2(n-1,k)$种方案。</li>
+</ul>
+</li>
+<li><p>通项：$$S_2(n,m)=\sum_{i=0}^{m}\frac{(-1)^{m-i}i^n}{i!(m-i)!}$$</p>
+</li>
+<li><p>Principle of Inclusion-Exclusion:</p>
+<p>使用容斥原理证明该公式。设将n个两两不同的元素，划分到k个两两不同的集合（允许空集）的方案数为$G_i$，将n个两两不同的元素，划分到k个两两不同的非空集合（不允许空集）的方案数为$F_i$。</p>
+<p>Obviously,<br>$$<br>G_i=k^n\G_i=\sum_{j=0}^i\binom{i}{j}F_j<br>$$<br>by 二项式反演:<br>$$<br>\begin{aligned} F_i&amp;=\sum\limits_{j=0}^{i}(-1)^{i-j}\binom{i}{j}G_j\ &amp;=\sum\limits_{j=0}^{i}(-1)^{i-j}\binom{i}{j}j^n\ &amp;=\sum\limits_{j=0}^{i}\dfrac{i!(-1)^{i-j}j^n}{j!(i-j)!} \end{aligned}<br>$$<br>considering that the difference bewteen $F_i$ and $S_2(n,i)$.the boxes in $S_2$ is not distinguishable .so $F_i$ is $i!$ times as much as $S_2$</p>
+</li>
+</ul>
+</li>
+<li><p>$P_j[n]$Partitions of Integers:$n=a_1+a_2+\cdots+a_j$ is called an n-partition with exactly j parts if $a_1 \geqslant a_2 \geqslant \cdots \geqslant a_j$ are all positive integers.</p>
+<ul>
+<li><p>$$p_j(n)=|{ (a_1,a_2,\ldots,a_j):a_1+\cdots+a_j =n,a_1\geqslant a_2 \geqslant \cdots \geqslant a_j  \geqslant 1 \ are\ integers}|$$</p>
+</li>
+<li><p>$p_j(n)$ is the number of ways of writing n as the sum of $j$ positive integers.</p>
+</li>
+<li><p>递推：$p_k[n]$表示n分k份。</p>
+<ul>
+<li>p_1(n)=1,p_n(n)=1</li>
+<li>if k &gt; n ,p_k(n)=0</li>
+<li>else if k &lt; n, $p_k(n)=p_k(n-k)+p_{k-1}(n-1)$</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420140337656.png" alt="image-20210420140337656"><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420140356308.png" alt="image-20210420140356308"></p>
+<ul>
+<li><p>generating function:</p>
+</li>
+<li><ul>
+<li><p>$$<br>\sum_{n=0}^{\infty}((\sum_{r=1}^{n} p_r(n)) \cdot x^n)=\prod_{k=1}^{\infty}(\frac{1}{1-x^k})<br>$$</p>
+</li>
+<li><p>对于具体n分成r份时：<br>$$<br>\sum_{n=0}^{\infty}p_r(n)x^n =x^r \prod_{j=1}^r\frac{1}{1-x^j}<br>$$</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>![image-20210420140446623](https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420140446623.png)![image-20210420140504115](https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420140504115.png)</code></pre>
+<ul>
+<li>easy combination and permutation application:</li>
 </ul>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418165343946.png" alt="image-20210418165343946"></p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210419005421092.png" alt="image-20210419005421092"></p>
-<p>T-path:</p>
-<p>​    T-condition:</p>
-<p>加括号，划分，lec9第二类斯特林数，整数划分lec12最后两页</p>
-<p>已整理ppt：lec1,2,3,4(未举例);lec7.,8,11,12</p>
+<ul>
+<li><ul>
+<li><p>shortest path:</p>
+<ul>
+<li>A $p\times q-grid$ is a collection of $pq$ squares of side length 1, organized as a rectangle of side length p and q.</li>
+<li><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420180738669.png" alt="image-20210420180738669"></li>
+<li>the number of the shortest paths is $\frac{(p+q)!}{p!q!}$</li>
+<li>multiset A= ${p\times \rightarrow,q\times \uparrow}$ , permutation of mulitiset.</li>
+<li># of shortest paths = # of permutations of A.</li>
+</ul>
+</li>
+<li><p>T-path:</p>
+<ul>
+<li><p>from (x,y) to (x+1,y+1) or (x+1,y-1)</p>
+</li>
+<li><p>T-condition: from  A(a,$\alpha$)  to  B(b,$\beta$) only if</p>
+<ul>
+<li>$b &gt; a$</li>
+<li>$b-a \geqslant|\beta -\alpha |$ </li>
+<li>$2|(b+\beta -a-\alpha)$</li>
+</ul>
+</li>
+<li><p>solve  permutation of multiset.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>a so easy example about generating function:例1 有1克、2克、3克、4克的砝码各一枚，问能称出多少重量，并各有几种称法。</p>
+<p>该问题可以看成n拆分成1,2,3,4之和且不允许重复的拆分数，利用母函数计算如下：</p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/9ab414c6c313767fe425925f5aa40a61.svg" alt="img"></p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/eb11006127c8cfbc72535aadf9304c83.svg" alt="img"></p>
+<p> 表示称出4克有2种方案，是1+3和2+2，以此类推，超出10克便无法称出。</p>
+<p>加括号是第二类斯特林数</p>
+<p>已整理ppt：lec1,2,3,4(未举例);5,6(简略);lec7,8,9,10,11,12</p>
 
       
     </div>
@@ -1692,13 +1796,13 @@ $$</code></pre>
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">18k</span>
+    <span title="Symbols count total">21k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">16 mins.</span>
+    <span title="Reading time total">19 mins.</span>
 </div>
 
         
