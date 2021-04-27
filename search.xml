@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>The First Blog</title>
-    <url>/2021/01/05/The-First-Blog/</url>
-    <content><![CDATA[<p>The last day of the exam and I can go back to Tianjin soon. </p>
-<p><code>PS:</code> This website which uses <code>hexo</code> is set up by the help of jjc and <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a></p>
-<p>thanks!</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Build Environment</title>
     <url>/2021/01/05/Build-Environment/</url>
     <content><![CDATA[<h2 id="Vs-code"><a href="#Vs-code" class="headerlink" title="Vs code"></a>Vs code</h2><p>I try to use <strong>Visual Studio Code</strong> about two months ago ,because <strong>Pycharm</strong> can’t satisfy the needs of some kinds of languages or wsl. This time I only need to attend some <code>plug-in</code>.</p>
@@ -27,56 +19,45 @@
       </tags>
   </entry>
   <entry>
-    <title>day2</title>
-    <url>/2021/01/08/d2/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
-<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
-</blockquote>
-<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
-<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
-</blockquote>
-<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
-<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
-</blockquote>
+    <title>C_notes</title>
+    <url>/2021/03/29/C_note/</url>
+    <content><![CDATA[<p>int 128＝（2^64）*a+b，（式中a，b为unsigned long long）</p>
+<p>fgets=读入会包含最后的换行而gets不会，但是这是在Linux/Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃</p>
+<p>~(-1)  $\iff$True</p>
+<p>!(0)  $\iff$True</p>
+<p>gets(str) 读取一行至str，读入换行并舍弃</p>
+<p>fgets(str,n,stdin) stdin表示从标准输入读入，可改为从指定文件读入，fgets读到（n-1）个字符或者换行为止，将换行符存在str中。</p>
+<p>gets_s(str,n)若读到（n-1）个字符前读到换行符，读入并舍弃换行符；若读到（n-1）个字符时未读到换行符，将str首字符设置为0，读入并舍弃该行剩余所有。然后<strong>调用依赖实现的“处理函数”，可能中止或退出程序</strong>。</p>
 ]]></content>
       <categories>
         <category>C</category>
       </categories>
       <tags>
         <tag>learning</tag>
+        <tag>notes</tag>
       </tags>
   </entry>
   <entry>
-    <title>README of program</title>
-    <url>/2021/01/26/README/</url>
-    <content><![CDATA[<p>Before you run this program ,you need to start the game and change it to “冒险—挑战—最后一关—下一步”like this picture.<img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/2021-01-26151622.png" alt="2021-01-26151622"></p>
-<p>and run this program .It can replace you to finish “闯关”.Its principle depends on <code>PyUserInput</code>.And you can input int to set the cycle index.</p>
+    <title>Mathematical Analysis</title>
+    <url>/2021/04/28/Mathematical%20analysis%20solution/</url>
+    <content><![CDATA[<p>网上冲浪发现一个巨佬学长，来自中科大</p>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210428004904906.png" alt="image-20210428004904906"></p>
+<p><a href="http://home.ustc.edu.cn/~qifan/answers/MathematicalAnalysis_B2_ans.pdf">http://home.ustc.edu.cn/~qifan/answers/MathematicalAnalysis_B2_ans.pdf</a></p>
 ]]></content>
       <categories>
-        <category>python</category>
+        <category>maths</category>
       </categories>
       <tags>
-        <tag>trying</tag>
-        <tag>learning</tag>
+        <tag>notes</tag>
       </tags>
   </entry>
   <entry>
-    <title>day8</title>
-    <url>/2021/01/14/d8/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="P104"><a href="#P104" class="headerlink" title="P104"></a>P104</h4><p>no <code>;</code> after while and some <code>;</code> in while</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(True)</span><br><span class="line">&#123;</span><br><span class="line">    line1;</span><br><span class="line">    line2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="p105"><a href="#p105" class="headerlink" title="p105"></a>p105</h4><p>pow(a,b) = a**b   //#include&lt;math.h&gt;</p>
-<h4 id="p110"><a href="#p110" class="headerlink" title="p110"></a>p110</h4><p>int /int = int ;</p>
-<p>float/float = float ;</p>
-<p>float/int = float ;</p>
-<p>int/float = float ;</p>
+    <title>The First Blog</title>
+    <url>/2021/01/05/The-First-Blog/</url>
+    <content><![CDATA[<p>The last day of the exam and I can go back to Tianjin soon. </p>
+<p><code>PS:</code> This website which uses <code>hexo</code> is set up by the help of jjc and <a href="https://zhuanlan.zhihu.com/p/26625249">zhihu</a></p>
+<p>thanks!</p>
 ]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
-      </tags>
   </entry>
   <entry>
     <title>day12</title>
@@ -103,6 +84,71 @@
         <category>C</category>
       </categories>
       <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>day2</title>
+    <url>/2021/01/08/d2/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p27"><a href="#p27" class="headerlink" title="p27"></a>p27</h4><blockquote>
+<p>如果遗漏 main()函数中的 return 语句，程序在运行至最外面的右花括号（}）时会返回0。因此，可以省略main()函数末尾的return语句。但是，不要在其他有返回值的函数中漏掉它。</p>
+</blockquote>
+<h4 id="p31"><a href="#p31" class="headerlink" title="p31"></a>p31</h4><blockquote>
+<p>这里要注意，何时执行 butler()函数取决于它在 main()中被调用的位置，而不是 butler()的定义在文件中的位置。例如，把 butler()函数的定义放在 main()定义之前，不会改变程序的执行顺序， butler()函数仍然在两次printf()调用之间被调用。记住，无论main()在程序文件处于什么位置，所有的C程序都从main()开始执行。但是，C的惯例是把main()放在开头，因为它提供了程序的基本框架。<br>C标准建议，要为程序中用到的所有函数提供函数原型。标准include文件（包含文件）为标准库函数提供可函数原型。例如，在C标准中，stdio.h文件包含了printf()的函数原型。</p>
+</blockquote>
+<h4 id="p32"><a href="#p32" class="headerlink" title="p32"></a>p32</h4><blockquote>
+<p>编译器另一个常见的毛病是，报错的位置比真正的错误位置滞后一行。例如，编译器在编译下一行时才会发现上一行缺少分号。因此，如果编译器报错某行缺少分号，请检查上一行。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>day16</title>
+    <url>/2021/01/28/d16/</url>
+    <content><![CDATA[<h3 id="logic-Operators"><a href="#logic-Operators" class="headerlink" title="logic Operators"></a>logic Operators</h3><p>&amp;&amp;   and </p>
+<p>||    or </p>
+<p>  !     not</p>
+<blockquote>
+<p>Logical Expressions:<br>expression1 &amp;&amp; expression2  is true if and only if both expressions are true.  expression1 || expression2  is true if either one or both expressions are true.  !expression  is true if the expression is false, and vice versa.  </p>
+</blockquote>
+<p>if <code>#include&lt;ios646.h&gt;</code>,then you can use and as &amp;&amp;,or as || not as ! .</p>
+<h3 id=""><a href="#" class="headerlink" title="?"></a>?</h3><p><code> x = (y &lt; 0) ? -y : y;  </code>    equal</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(y &lt; <span class="number">0</span>)</span><br><span class="line">    x = -y;</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	x = y;</span><br></pre></td></tr></table></figure>
+<p><code> max = (a &gt; b) ? a : b;  </code>   equal</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(a &gt; b)</span><br><span class="line">    max = a;</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	max = b;</span><br></pre></td></tr></table></figure>
+<h3 id="continue-and-break"><a href="#continue-and-break" class="headerlink" title="continue and break"></a><code>continue</code> and <code>break</code></h3><h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a><code>continue</code></h4><blockquote>
+<p>When encountered, it causes the rest of an iteration to be skipped and the next iteration to be started. If the  continue  statement is inside nested structures, it affects only the innermost structure containing it. </p>
+</blockquote>
+<h4 id="break"><a href="#break" class="headerlink" title="break"></a><code>break</code></h4><blockquote>
+<p>A  break  statement in a loop causes the program to break free of the loop that encloses it and to proceed to the next stage of the program.  If the  break  statement is inside nested loops, it affects only the innermost loop containing it.   </p>
+</blockquote>
+<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> (ch)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;a&#x27;</span>:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;b&#x27;</span>:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;babirusa, a wild pig of Malay\n&quot;</span>);</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;That&#x27;s a stumper!\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>equal </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(ch == a)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(ch == b)</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;babirusa, a wild pig of Malay\n&quot;</span>);</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;That&#x27;s a stumper!\n&quot;</span>);    </span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>README of program</title>
+    <url>/2021/01/26/README/</url>
+    <content><![CDATA[<p>Before you run this program ,you need to start the game and change it to “冒险—挑战—最后一关—下一步”like this picture.<img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/2021-01-26151622.png" alt="2021-01-26151622"></p>
+<p>and run this program .It can replace you to finish “闯关”.Its principle depends on <code>PyUserInput</code>.And you can input int to set the cycle index.</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>trying</tag>
         <tag>learning</tag>
       </tags>
   </entry>
@@ -139,6 +185,19 @@
       </tags>
   </entry>
   <entry>
+    <title>day4</title>
+    <url>/2021/01/10/day4/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p66"><a href="#p66" class="headerlink" title="p66"></a>p66</h4><p>something in ‘ ‘ is a character(一个字符)</p>
+<p>or something in “ “is a string(一个字符串)</p>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>day9</title>
     <url>/2021/01/18/d9/</url>
     <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><p><code>++i</code> with <code>i++</code></p>
@@ -147,6 +206,24 @@
 <blockquote>
 <p>When  n++  is part of an expression, you can think of it as meaning “use  n ; then increment it.” On the other hand,  ++n  means “increment  n ; then use it.”   </p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>day8</title>
+    <url>/2021/01/14/d8/</url>
+    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="P104"><a href="#P104" class="headerlink" title="P104"></a>P104</h4><p>no <code>;</code> after while and some <code>;</code> in while</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(True)</span><br><span class="line">&#123;</span><br><span class="line">    line1;</span><br><span class="line">    line2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="p105"><a href="#p105" class="headerlink" title="p105"></a>p105</h4><p>pow(a,b) = a**b   //#include&lt;math.h&gt;</p>
+<h4 id="p110"><a href="#p110" class="headerlink" title="p110"></a>p110</h4><p>int /int = int ;</p>
+<p>float/float = float ;</p>
+<p>float/int = float ;</p>
+<p>int/float = float ;</p>
 ]]></content>
       <categories>
         <category>C</category>
@@ -178,16 +255,262 @@
       </tags>
   </entry>
   <entry>
-    <title>day4</title>
-    <url>/2021/01/10/day4/</url>
-    <content><![CDATA[<h2 id="《C-primer-plus-》"><a href="#《C-primer-plus-》" class="headerlink" title="《C primer plus 》"></a>《<strong>C primer plus</strong> 》</h2><h4 id="p66"><a href="#p66" class="headerlink" title="p66"></a>p66</h4><p>something in ‘ ‘ is a character(一个字符)</p>
-<p>or something in “ “is a string(一个字符串)</p>
+    <title>Hello World</title>
+    <url>/2021/01/05/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Diary</category>
+      </categories>
+      <tags>
+        <tag>Testing</tag>
+        <tag>Another Tag</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C_notes</title>
+    <url>/2021/03/29/note/</url>
+    <content><![CDATA[<p>int 128＝（2^64）*a+b，（式中a，b为unsigned long long）</p>
+<p>fgets=读入会包含最后的换行而gets不会，但是这是在Linux/Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃</p>
+<p>~(-1)  $\iff$True</p>
+<p>!(0)  $\iff$True</p>
+<p>gets(str) 读取一行至str，读入换行并舍弃</p>
+<p>fgets(str,n,stdin) stdin表示从标准输入读入，可改为从指定文件读入，fgets读到（n-1）个字符或者换行为止，将换行符存在str中。</p>
+<p>gets_s(str,n)若读到（n-1）个字符前读到换行符，读入并舍弃换行符；若读到（n-1）个字符时未读到换行符，将str首字符设置为0，读入并舍弃该行剩余所有。然后<strong>调用依赖实现的“处理函数”，可能中止或退出程序</strong>。</p>
 ]]></content>
       <categories>
         <category>C</category>
       </categories>
       <tags>
         <tag>learning</tag>
+        <tag>notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>word list</title>
+    <url>/2021/04/18/word%20list/</url>
+    <content><![CDATA[<h2 id="word-list-for-cet6"><a href="#word-list-for-cet6" class="headerlink" title="word list for cet6"></a>word list for cet6</h2><h3 id="熟词生义"><a href="#熟词生义" class="headerlink" title="熟词生义"></a>熟词生义</h3><h4 id="A"><a href="#A" class="headerlink" title="A"></a>A</h4><p>act      n.法令;(一)幕</p>
+<p>administer     v.给与</p>
+<p>air     n. 样子；v. 晾干，使通风，使公开</p>
+<p>arch     n.拱形，拱门，v.使成拱形  a.淘气的</p>
+<p>article     n.条款</p>
+<h4 id="B"><a href="#B" class="headerlink" title="B"></a>B</h4><p>bear     vt.生育，运输 vt.写（刻，印）有 n.（证券交易中）卖空者</p>
+<p>belt     n.区</p>
+<p>browse     vi.（牛、羊）吃草</p>
+<h4 id="C"><a href="#C" class="headerlink" title="C"></a>C</h4><p>cheap     a. 卑鄙的</p>
+<p>coin     vt.创造（新词）</p>
+<p>collect    a./ad.打由对方付费的电话</p>
+<p>concert     n.一致</p>
+<p>couch     vt.表达</p>
+<p>crop     n.一批；vt.剪短，修剪</p>
+<h4 id="D"><a href="#D" class="headerlink" title="D"></a>D</h4><p>deed     n.契约，证书</p>
+<p>deliver     vt.给（产妇）接生；给与（打击）；解救，拯救</p>
+<p>description     n.种类</p>
+<p>dividend     n.红利，股息；会报，效益</p>
+<h4 id="E"><a href="#E" class="headerlink" title="E"></a>E</h4><p>edge     n.优势 v.侧着移动</p>
+<p>employ     vt.使忙于</p>
+<p>even     a.均匀的，平的 v.（使）相等</p>
+<p>express     ad.用快递方式，乘直达快车 n.快车，快递 a.特快的，明确的</p>
+<h4 id="F"><a href="#F" class="headerlink" title="F"></a>F</h4><p>fair     n.定期集市，博览会</p>
+<p>familiar     a.冒昧的，放肆的</p>
+<p>film     n.胶卷 v.拍摄</p>
+<p>fine     a.精致的，颗粒微小的</p>
+<p>firm     a.结实的，坚固的 n.商行，商号，公司</p>
+<h4 id="G"><a href="#G" class="headerlink" title="G"></a>G</h4><p>garage     n.车库，汽车修理行</p>
+<p>general     n.将军</p>
+<h4 id="H"><a href="#H" class="headerlink" title="H"></a>H</h4><p>hail     n.雹；一阵 vi.下雹 vt.招呼，高呼，为···喝彩</p>
+<p>hand      n. 指针</p>
+<p>handsome     a. 相当大的</p>
+<p>harp     n.竖琴 vi.喋喋不休的说</p>
+<p>hear      vt.审讯</p>
+<p>house     n.商号，议院 vt.给···房子住</p>
+<h4 id="I"><a href="#I" class="headerlink" title="I"></a>I</h4><p>immediate     a.直接的</p>
+<p>industry     n.勤劳</p>
+<p>iron     vt.烫（衣），烫平</p>
+<h4 id="K"><a href="#K" class="headerlink" title="K"></a>K</h4><p>kill      vt.消磨（时间）</p>
+<h4 id="L"><a href="#L" class="headerlink" title="L"></a>L</h4><p>last      vi.持续</p>
+<p>lead     n.铅，铅制品</p>
+<p>letter     n.证书</p>
+<p>library     n.藏书</p>
+<p>lot     n.（抽的）签，（抓的）阄</p>
+<h4 id="M"><a href="#M" class="headerlink" title="M"></a>M</h4><p>mark     n.斑点</p>
+<p>master     vt.掌握，征服 n.原版；硕士 a.主要的，优秀的</p>
+<p>might     n.力量，威力，权势</p>
+<p>mine     n.矿，矿山；地雷</p>
+<p>minute     a.微细的，极小的 n.会议记录</p>
+<p>mirror     vt.反映，反射</p>
+<p>moon     n.卫星</p>
+<h4 id="N"><a href="#N" class="headerlink" title="N"></a>N</h4><p>nurse     vt.看护</p>
+<h4 id="P"><a href="#P" class="headerlink" title="P"></a>P</h4><p>paper     vt.用墙纸糊墙</p>
+<p>part     v.分开，n. 角色，器官</p>
+<p>peanut     n.花生，很少的钱</p>
+<p>period     n.学时，句号</p>
+<p>permit     n.执照</p>
+<p>piece     vt.拼合</p>
+<p>pipe     n.烟斗；管乐器；vt.用管道输送</p>
+<p>plain     a.清楚的</p>
+<p>plant     n.工厂，间谍</p>
+<p>plate     n.板，片，盘， 金属牌  vt.电镀</p>
+<p>pool     vt.公用，n.公用物</p>
+<p>post     n.柱，桩，杆 vt.贴出，宣布，公告</p>
+<p>pound     vt.捣碎，猛击</p>
+<p>power     vt.使开动</p>
+<p>present      vt.介绍，提出</p>
+<p>press         n.新闻界，舆论界；出版社，印刷机</p>
+<p>pride     vt.自夸</p>
+<p>prize      vt.珍视</p>
+<p>pronounce     vt.宣布，宣判</p>
+<p>pupil     n.瞳孔</p>
+<h4 id="R"><a href="#R" class="headerlink" title="R"></a>R</h4><p>rapid      n.急流</p>
+<p>reason     v.推理，分析</p>
+<p>rest     n.支座 v.靠，停留</p>
+<p>revolution     n.旋转，绕转</p>
+<p>row     v.划（船等）</p>
+<p>rush     v.催促，仓促完成  n.需求的激增；身体的一阵感觉</p>
+<h4 id="S"><a href="#S" class="headerlink" title="S"></a>S</h4><p>safe     n.保险箱</p>
+<p>sandwich     vt.夹入</p>
+<p>satisfaction     n.赔偿（物）</p>
+<p>save     prep.除···之外</p>
+<p>school     n.学派；上课（时间）</p>
+<p>sentence     n.判决 vt.宣判</p>
+<p>share     n.份额 n. 股份</p>
+<p>shoot     vt.疾驰 n. 嫩枝，打猎</p>
+<p>shoulder      vt. 肩负，承担</p>
+<p>skirt     n.边缘，郊区 vt.绕开，位于···边缘</p>
+<p>society      n.上流社会</p>
+<p>soil     v.弄脏</p>
+<p>sort     vt.整理</p>
+<p>sound     a.健康的，完好的；精湛的，正确的，彻底的  ad.充分地，酣畅的</p>
+<p>spare     a.多余的，备用的 vt.节约，饶恕，免去</p>
+<p>stamp     n.戳子；跺脚 v.踩踏，在···上面盖印</p>
+<p>stomach     n.胃，肚子，食欲 v.忍受</p>
+<p>succeed     v.继承，继···之后</p>
+<p>suit     n.起诉，诉讼</p>
+<p>sunny a.快活的</p>
+<h4 id="T"><a href="#T" class="headerlink" title="T"></a>T</h4><p>tablet     n.药片，碑，牌，（木，竹）间</p>
+<p>tank     n.大容器，槽，池塘</p>
+<p>tap     vt.开发，窃听</p>
+<h4 id="U"><a href="#U" class="headerlink" title="U"></a>U</h4><p>uniform     a.一致的</p>
+<h4 id="W"><a href="#W" class="headerlink" title="W"></a>W</h4><p>wage     vt.开展（运动）</p>
+<h3 id="Word-list"><a href="#Word-list" class="headerlink" title="Word list"></a>Word list</h3><h4 id="Word-list1-A"><a href="#Word-list1-A" class="headerlink" title="Word list1 (A)"></a>Word list1 (A)</h4><p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210416020421749.png" alt="image-20210416020421749"></p>
+<p>accessory     n.附件，零件，配件；装饰品；同谋，帮凶</p>
+<p>accord     n.一致，符合;谅解，协议  v.相符合，一致；授予，赠予</p>
+<blockquote>
+<p>ac + cord(心)<br>with one accord        一致地<br>in accord with        按照，根据，与···一致</p>
+</blockquote>
+<p>accordance     n.一致，和谐，符合</p>
+<blockquote>
+<p>in accordance with        按照，根据，与···一致</p>
+</blockquote>
+<p>account      vi.说明···的原因</p>
+<blockquote>
+<p>account for             解释，说明，占有</p>
+<p>on account of        由于，为了</p>
+<p>on no account        绝不可以，无论如何也不</p>
+</blockquote>
+<p>accuse      vt.指责，归咎于</p>
+<blockquote>
+<p>ac(加强) + cuse(理由)</p>
+<p>accuse sb. of doing sth.         指控某人···</p>
+</blockquote>
+<p>accustomed to sth. / doing sth.</p>
+<p>acquaint       vt.使认识，使熟悉，使了解</p>
+<blockquote>
+<p>ac + quaint(知道)</p>
+<p>acquaint with        使认识，使熟悉，使了解</p>
+</blockquote>
+<p>acquaintance     n.认识，了解，熟人</p>
+<p>acute     a. 严重的；急性的；灵敏的，敏锐的；精明的</p>
+<p>adequate     a. 足够的，可以胜任的</p>
+<blockquote>
+<p>ad(加强) + equ(平等)+ ate(···的) $\rightarrow$ 比平等多的 $\rightarrow$ 足够的</p>
+</blockquote>
+<p>adhere      vi.粘附，附着；遵守，坚持；追随，支持</p>
+<blockquote>
+<p>ad(加强) + her(粘附) + e</p>
+<p>adhere to        粘附，附着；遵守，坚持</p>
+</blockquote>
+<p>adjacent     a.邻近的，毗邻的</p>
+<blockquote>
+<p>adjacent to</p>
+</blockquote>
+<p>adjoin     vt.贴近，与···毗连</p>
+<blockquote>
+<p>ad(附近，向) + join(连接) $\rightarrow$ 贴近</p>
+</blockquote>
+<p>adolescent      n.青少年 ad.青春期的，青少年的</p>
+<p>adore     vt.崇拜，敬慕，爱慕；非常喜欢</p>
+<p>adverse     a.不利的，有害的</p>
+<blockquote>
+<p>ad(坏) + vers(转) + e</p>
+</blockquote>
+<p>aerial     a. 飞机的，航空的；空中的，架空的 n. 天线</p>
+<blockquote>
+<p>aer(空气) + ial(···的)</p>
+</blockquote>
+<p>aesthetic     a. 美学的，审美的；悦目的，雅致的</p>
+<blockquote>
+<p>a + esthet(感觉)+ ic(···的) </p>
+</blockquote>
+<p>affection     n. 感情；爱慕</p>
+<p>affiliate     vt.使隶属于    n.附属机构，分公司</p>
+<p>affirm     vt. 断言，坚持声称；证实，确认</p>
+<p>afflict     vt.使苦恼，折磨</p>
+<p>aggravate     vt.加重，加剧，使恶化；激怒，使恼火</p>
+<h4 id="Word-list2-A"><a href="#Word-list2-A" class="headerlink" title="Word list2 (A)"></a>Word list2 (A)</h4><h4 id=""><a href="#" class="headerlink" title=""></a><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210417003740227.png" alt="image-20210417003740227"></h4><p>aggregate     n.总数，合计 a.总计的，合计的 vt.总计达，合计</p>
+<blockquote>
+<p>in the aggregate 总共</p>
+</blockquote>
+<p>agony     n.(极度的)痛苦，苦恼</p>
+<p>aisle     n.过道，通道</p>
+<p>alcohol     n.酒精，乙醇</p>
+<p>alien     a.外国的，外国人的；陌生的；性质不同的，不相容的  n.外国人，外侨，外星人</p>
+<p>alleviate     vt.减轻，缓解，缓和</p>
+<p>alliance     n.结盟，联盟</p>
+<p>alloy     n.合金，vt. 将···铸成合金</p>
+<p>alter     vt.改变，变更，变动</p>
+<p>alternate     a.交替的，轮流的，间隔的  v.（使）轮流，（使）交替</p>
+<p>amend     vt.修改，修订，改进 n.赔罪，赔偿</p>
+<blockquote>
+<p>a(加强)+mend(修理)$\rightarrow$ 修改，修订 </p>
+</blockquote>
+<p>ammunition     n. 弹药，军火</p>
+<p>amplify     vt.放大（声音等），增强；扩大，详述，进一步阐述</p>
+<p>analogy     n.比拟，类比，类推</p>
+<blockquote>
+<p>ana(分开)+log(说)+$\rightarrow$将事物分成类来说</p>
+<p>by analogy      用类比的方式     </p>
+</blockquote>
+<p>anonymous     a.无名的，不具名的；匿名的；无特色的，无个体特征的</p>
+<blockquote>
+<p>an(无)+onym(名字)+ous(···的)</p>
+</blockquote>
+<p>anticipate     vt.预料，预期，期望；先于···行动，提前使用</p>
+<blockquote>
+<p>anti(先)+cip(拿)+ate(做)</p>
+</blockquote>
+<p>apparatus      n.器械，器具，仪器；机构，组织</p>
+<p>appease      vt.平息，抚慰，姑息</p>
+<p>appendix     n.阑尾</p>
+<p>applaud     vi.鼓掌，喝彩    vt.向···鼓掌，向···喝彩；称赞，赞许</p>
+<p>appliance     n.用具，器具，器械</p>
+<p>appraisal     n.估计，估量，评价</p>
+<h4 id="Word-list3-A"><a href="#Word-list3-A" class="headerlink" title="Word list3 (A)"></a>Word list3 (A)</h4><p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210417175951837.png" alt="image-20210417175951837"></p>
+<p>apt</p>
+]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+      <tags>
+        <tag>notes</tag>
       </tags>
   </entry>
   <entry>
@@ -211,96 +534,6 @@
       <tags>
         <tag>trying</tag>
         <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/01/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>Diary</category>
-      </categories>
-      <tags>
-        <tag>Testing</tag>
-        <tag>Another Tag</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>day16</title>
-    <url>/2021/01/28/d16/</url>
-    <content><![CDATA[<h3 id="logic-Operators"><a href="#logic-Operators" class="headerlink" title="logic Operators"></a>logic Operators</h3><p>&amp;&amp;   and </p>
-<p>||    or </p>
-<p>  !     not</p>
-<blockquote>
-<p>Logical Expressions:<br>expression1 &amp;&amp; expression2  is true if and only if both expressions are true.  expression1 || expression2  is true if either one or both expressions are true.  !expression  is true if the expression is false, and vice versa.  </p>
-</blockquote>
-<p>if <code>#include&lt;ios646.h&gt;</code>,then you can use and as &amp;&amp;,or as || not as ! .</p>
-<h3 id=""><a href="#" class="headerlink" title="?"></a>?</h3><p><code> x = (y &lt; 0) ? -y : y;  </code>    equal</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(y &lt; <span class="number">0</span>)</span><br><span class="line">    x = -y;</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	x = y;</span><br></pre></td></tr></table></figure>
-<p><code> max = (a &gt; b) ? a : b;  </code>   equal</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(a &gt; b)</span><br><span class="line">    max = a;</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	max = b;</span><br></pre></td></tr></table></figure>
-<h3 id="continue-and-break"><a href="#continue-and-break" class="headerlink" title="continue and break"></a><code>continue</code> and <code>break</code></h3><h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a><code>continue</code></h4><blockquote>
-<p>When encountered, it causes the rest of an iteration to be skipped and the next iteration to be started. If the  continue  statement is inside nested structures, it affects only the innermost structure containing it. </p>
-</blockquote>
-<h4 id="break"><a href="#break" class="headerlink" title="break"></a><code>break</code></h4><blockquote>
-<p>A  break  statement in a loop causes the program to break free of the loop that encloses it and to proceed to the next stage of the program.  If the  break  statement is inside nested loops, it affects only the innermost loop containing it.   </p>
-</blockquote>
-<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> (ch)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;a&#x27;</span>:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;b&#x27;</span>:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;babirusa, a wild pig of Malay\n&quot;</span>);</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;That&#x27;s a stumper!\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>equal </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(ch == a)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;argali, a wild sheep of Asia\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(ch == b)</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;babirusa, a wild pig of Malay\n&quot;</span>);</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;That&#x27;s a stumper!\n&quot;</span>);    </span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C_notes</title>
-    <url>/2021/03/29/note/</url>
-    <content><![CDATA[<p>int 128＝（2^64）*a+b，（式中a，b为unsigned long long）</p>
-<p>fgets=读入会包含最后的换行而gets不会，但是这是在Linux/Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃</p>
-<p>~(-1)  $\iff$True</p>
-<p>!(0)  $\iff$True</p>
-<p>gets(str) 读取一行至str，读入换行并舍弃</p>
-<p>fgets(str,n,stdin) stdin表示从标准输入读入，可改为从指定文件读入，fgets读到（n-1）个字符或者换行为止，将换行符存在str中。</p>
-<p>gets_s(str,n)若读到（n-1）个字符前读到换行符，读入并舍弃换行符；若读到（n-1）个字符时未读到换行符，将str首字符设置为0，读入并舍弃该行剩余所有。然后<strong>调用依赖实现的“处理函数”，可能中止或退出程序</strong>。</p>
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
-        <tag>notes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C_notes</title>
-    <url>/2021/03/29/C_note/</url>
-    <content><![CDATA[<p>int 128＝（2^64）*a+b，（式中a，b为unsigned long long）</p>
-<p>fgets=读入会包含最后的换行而gets不会，但是这是在Linux/Unix之下，windows下换行是\r\n，而Linux下是\n，所以gets会把\r读入\n舍弃</p>
-<p>~(-1)  $\iff$True</p>
-<p>!(0)  $\iff$True</p>
-<p>gets(str) 读取一行至str，读入换行并舍弃</p>
-<p>fgets(str,n,stdin) stdin表示从标准输入读入，可改为从指定文件读入，fgets读到（n-1）个字符或者换行为止，将换行符存在str中。</p>
-<p>gets_s(str,n)若读到（n-1）个字符前读到换行符，读入并舍弃换行符；若读到（n-1）个字符时未读到换行符，将str首字符设置为0，读入并舍弃该行剩余所有。然后<strong>调用依赖实现的“处理函数”，可能中止或退出程序</strong>。</p>
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>learning</tag>
-        <tag>notes</tag>
       </tags>
   </entry>
   <entry>
@@ -615,239 +848,6 @@ $$</code></pre>
 <p> 表示称出4克有2种方案，是1+3和2+2，以此类推，超出10克便无法称出。</p>
 <p>加括号是第二类斯特林数</p>
 <p>已整理ppt：lec1,2,3,4(未举例);5,6(简略);lec7,8,9,10,11,12</p>
-]]></content>
-      <categories>
-        <category>maths</category>
-      </categories>
-      <tags>
-        <tag>notes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>word list</title>
-    <url>/2021/04/18/word%20list/</url>
-    <content><![CDATA[<h2 id="word-list-for-cet6"><a href="#word-list-for-cet6" class="headerlink" title="word list for cet6"></a>word list for cet6</h2><h3 id="熟词生义"><a href="#熟词生义" class="headerlink" title="熟词生义"></a>熟词生义</h3><h4 id="A"><a href="#A" class="headerlink" title="A"></a>A</h4><p>act      n.法令;(一)幕</p>
-<p>administer     v.给与</p>
-<p>air     n. 样子；v. 晾干，使通风，使公开</p>
-<p>arch     n.拱形，拱门，v.使成拱形  a.淘气的</p>
-<p>article     n.条款</p>
-<h4 id="B"><a href="#B" class="headerlink" title="B"></a>B</h4><p>bear     vt.生育，运输 vt.写（刻，印）有 n.（证券交易中）卖空者</p>
-<p>belt     n.区</p>
-<p>browse     vi.（牛、羊）吃草</p>
-<h4 id="C"><a href="#C" class="headerlink" title="C"></a>C</h4><p>cheap     a. 卑鄙的</p>
-<p>coin     vt.创造（新词）</p>
-<p>collect    a./ad.打由对方付费的电话</p>
-<p>concert     n.一致</p>
-<p>couch     vt.表达</p>
-<p>crop     n.一批；vt.剪短，修剪</p>
-<h4 id="D"><a href="#D" class="headerlink" title="D"></a>D</h4><p>deed     n.契约，证书</p>
-<p>deliver     vt.给（产妇）接生；给与（打击）；解救，拯救</p>
-<p>description     n.种类</p>
-<p>dividend     n.红利，股息；会报，效益</p>
-<h4 id="E"><a href="#E" class="headerlink" title="E"></a>E</h4><p>edge     n.优势 v.侧着移动</p>
-<p>employ     vt.使忙于</p>
-<p>even     a.均匀的，平的 v.（使）相等</p>
-<p>express     ad.用快递方式，乘直达快车 n.快车，快递 a.特快的，明确的</p>
-<h4 id="F"><a href="#F" class="headerlink" title="F"></a>F</h4><p>fair     n.定期集市，博览会</p>
-<p>familiar     a.冒昧的，放肆的</p>
-<p>film     n.胶卷 v.拍摄</p>
-<p>fine     a.精致的，颗粒微小的</p>
-<p>firm     a.结实的，坚固的 n.商行，商号，公司</p>
-<h4 id="G"><a href="#G" class="headerlink" title="G"></a>G</h4><p>garage     n.车库，汽车修理行</p>
-<p>general     n.将军</p>
-<h4 id="H"><a href="#H" class="headerlink" title="H"></a>H</h4><p>hail     n.雹；一阵 vi.下雹 vt.招呼，高呼，为···喝彩</p>
-<p>hand      n. 指针</p>
-<p>handsome     a. 相当大的</p>
-<p>harp     n.竖琴 vi.喋喋不休的说</p>
-<p>hear      vt.审讯</p>
-<p>house     n.商号，议院 vt.给···房子住</p>
-<h4 id="I"><a href="#I" class="headerlink" title="I"></a>I</h4><p>immediate     a.直接的</p>
-<p>industry     n.勤劳</p>
-<p>iron     vt.烫（衣），烫平</p>
-<h4 id="K"><a href="#K" class="headerlink" title="K"></a>K</h4><p>kill      vt.消磨（时间）</p>
-<h4 id="L"><a href="#L" class="headerlink" title="L"></a>L</h4><p>last      vi.持续</p>
-<p>lead     n.铅，铅制品</p>
-<p>letter     n.证书</p>
-<p>library     n.藏书</p>
-<p>lot     n.（抽的）签，（抓的）阄</p>
-<h4 id="M"><a href="#M" class="headerlink" title="M"></a>M</h4><p>mark     n.斑点</p>
-<p>master     vt.掌握，征服 n.原版；硕士 a.主要的，优秀的</p>
-<p>might     n.力量，威力，权势</p>
-<p>mine     n.矿，矿山；地雷</p>
-<p>minute     a.微细的，极小的 n.会议记录</p>
-<p>mirror     vt.反映，反射</p>
-<p>moon     n.卫星</p>
-<h4 id="N"><a href="#N" class="headerlink" title="N"></a>N</h4><p>nurse     vt.看护</p>
-<h4 id="P"><a href="#P" class="headerlink" title="P"></a>P</h4><p>paper     vt.用墙纸糊墙</p>
-<p>part     v.分开，n. 角色，器官</p>
-<p>peanut     n.花生，很少的钱</p>
-<p>period     n.学时，句号</p>
-<p>permit     n.执照</p>
-<p>piece     vt.拼合</p>
-<p>pipe     n.烟斗；管乐器；vt.用管道输送</p>
-<p>plain     a.清楚的</p>
-<p>plant     n.工厂，间谍</p>
-<p>plate     n.板，片，盘， 金属牌  vt.电镀</p>
-<p>pool     vt.公用，n.公用物</p>
-<p>post     n.柱，桩，杆 vt.贴出，宣布，公告</p>
-<p>pound     vt.捣碎，猛击</p>
-<p>power     vt.使开动</p>
-<p>present      vt.介绍，提出</p>
-<p>press         n.新闻界，舆论界；出版社，印刷机</p>
-<p>pride     vt.自夸</p>
-<p>prize      vt.珍视</p>
-<p>pronounce     vt.宣布，宣判</p>
-<p>pupil     n.瞳孔</p>
-<h4 id="R"><a href="#R" class="headerlink" title="R"></a>R</h4><p>rapid      n.急流</p>
-<p>reason     v.推理，分析</p>
-<p>rest     n.支座 v.靠，停留</p>
-<p>revolution     n.旋转，绕转</p>
-<p>row     v.划（船等）</p>
-<p>rush     v.催促，仓促完成  n.需求的激增；身体的一阵感觉</p>
-<h4 id="S"><a href="#S" class="headerlink" title="S"></a>S</h4><p>safe     n.保险箱</p>
-<p>sandwich     vt.夹入</p>
-<p>satisfaction     n.赔偿（物）</p>
-<p>save     prep.除···之外</p>
-<p>school     n.学派；上课（时间）</p>
-<p>sentence     n.判决 vt.宣判</p>
-<p>share     n.份额 n. 股份</p>
-<p>shoot     vt.疾驰 n. 嫩枝，打猎</p>
-<p>shoulder      vt. 肩负，承担</p>
-<p>skirt     n.边缘，郊区 vt.绕开，位于···边缘</p>
-<p>society      n.上流社会</p>
-<p>soil     v.弄脏</p>
-<p>sort     vt.整理</p>
-<p>sound     a.健康的，完好的；精湛的，正确的，彻底的  ad.充分地，酣畅的</p>
-<p>spare     a.多余的，备用的 vt.节约，饶恕，免去</p>
-<p>stamp     n.戳子；跺脚 v.踩踏，在···上面盖印</p>
-<p>stomach     n.胃，肚子，食欲 v.忍受</p>
-<p>succeed     v.继承，继···之后</p>
-<p>suit     n.起诉，诉讼</p>
-<p>sunny a.快活的</p>
-<h4 id="T"><a href="#T" class="headerlink" title="T"></a>T</h4><p>tablet     n.药片，碑，牌，（木，竹）间</p>
-<p>tank     n.大容器，槽，池塘</p>
-<p>tap     vt.开发，窃听</p>
-<h4 id="U"><a href="#U" class="headerlink" title="U"></a>U</h4><p>uniform     a.一致的</p>
-<h4 id="W"><a href="#W" class="headerlink" title="W"></a>W</h4><p>wage     vt.开展（运动）</p>
-<h3 id="Word-list"><a href="#Word-list" class="headerlink" title="Word list"></a>Word list</h3><h4 id="Word-list1-A"><a href="#Word-list1-A" class="headerlink" title="Word list1 (A)"></a>Word list1 (A)</h4><p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210416020421749.png" alt="image-20210416020421749"></p>
-<p>accessory     n.附件，零件，配件；装饰品；同谋，帮凶</p>
-<p>accord     n.一致，符合;谅解，协议  v.相符合，一致；授予，赠予</p>
-<blockquote>
-<p>ac + cord(心)<br>with one accord        一致地<br>in accord with        按照，根据，与···一致</p>
-</blockquote>
-<p>accordance     n.一致，和谐，符合</p>
-<blockquote>
-<p>in accordance with        按照，根据，与···一致</p>
-</blockquote>
-<p>account      vi.说明···的原因</p>
-<blockquote>
-<p>account for             解释，说明，占有</p>
-<p>on account of        由于，为了</p>
-<p>on no account        绝不可以，无论如何也不</p>
-</blockquote>
-<p>accuse      vt.指责，归咎于</p>
-<blockquote>
-<p>ac(加强) + cuse(理由)</p>
-<p>accuse sb. of doing sth.         指控某人···</p>
-</blockquote>
-<p>accustomed to sth. / doing sth.</p>
-<p>acquaint       vt.使认识，使熟悉，使了解</p>
-<blockquote>
-<p>ac + quaint(知道)</p>
-<p>acquaint with        使认识，使熟悉，使了解</p>
-</blockquote>
-<p>acquaintance     n.认识，了解，熟人</p>
-<p>acute     a. 严重的；急性的；灵敏的，敏锐的；精明的</p>
-<p>adequate     a. 足够的，可以胜任的</p>
-<blockquote>
-<p>ad(加强) + equ(平等)+ ate(···的) $\rightarrow$ 比平等多的 $\rightarrow$ 足够的</p>
-</blockquote>
-<p>adhere      vi.粘附，附着；遵守，坚持；追随，支持</p>
-<blockquote>
-<p>ad(加强) + her(粘附) + e</p>
-<p>adhere to        粘附，附着；遵守，坚持</p>
-</blockquote>
-<p>adjacent     a.邻近的，毗邻的</p>
-<blockquote>
-<p>adjacent to</p>
-</blockquote>
-<p>adjoin     vt.贴近，与···毗连</p>
-<blockquote>
-<p>ad(附近，向) + join(连接) $\rightarrow$ 贴近</p>
-</blockquote>
-<p>adolescent      n.青少年 ad.青春期的，青少年的</p>
-<p>adore     vt.崇拜，敬慕，爱慕；非常喜欢</p>
-<p>adverse     a.不利的，有害的</p>
-<blockquote>
-<p>ad(坏) + vers(转) + e</p>
-</blockquote>
-<p>aerial     a. 飞机的，航空的；空中的，架空的 n. 天线</p>
-<blockquote>
-<p>aer(空气) + ial(···的)</p>
-</blockquote>
-<p>aesthetic     a. 美学的，审美的；悦目的，雅致的</p>
-<blockquote>
-<p>a + esthet(感觉)+ ic(···的) </p>
-</blockquote>
-<p>affection     n. 感情；爱慕</p>
-<p>affiliate     vt.使隶属于    n.附属机构，分公司</p>
-<p>affirm     vt. 断言，坚持声称；证实，确认</p>
-<p>afflict     vt.使苦恼，折磨</p>
-<p>aggravate     vt.加重，加剧，使恶化；激怒，使恼火</p>
-<h4 id="Word-list2-A"><a href="#Word-list2-A" class="headerlink" title="Word list2 (A)"></a>Word list2 (A)</h4><h4 id=""><a href="#" class="headerlink" title=""></a><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210417003740227.png" alt="image-20210417003740227"></h4><p>aggregate     n.总数，合计 a.总计的，合计的 vt.总计达，合计</p>
-<blockquote>
-<p>in the aggregate 总共</p>
-</blockquote>
-<p>agony     n.(极度的)痛苦，苦恼</p>
-<p>aisle     n.过道，通道</p>
-<p>alcohol     n.酒精，乙醇</p>
-<p>alien     a.外国的，外国人的；陌生的；性质不同的，不相容的  n.外国人，外侨，外星人</p>
-<p>alleviate     vt.减轻，缓解，缓和</p>
-<p>alliance     n.结盟，联盟</p>
-<p>alloy     n.合金，vt. 将···铸成合金</p>
-<p>alter     vt.改变，变更，变动</p>
-<p>alternate     a.交替的，轮流的，间隔的  v.（使）轮流，（使）交替</p>
-<p>amend     vt.修改，修订，改进 n.赔罪，赔偿</p>
-<blockquote>
-<p>a(加强)+mend(修理)$\rightarrow$ 修改，修订 </p>
-</blockquote>
-<p>ammunition     n. 弹药，军火</p>
-<p>amplify     vt.放大（声音等），增强；扩大，详述，进一步阐述</p>
-<p>analogy     n.比拟，类比，类推</p>
-<blockquote>
-<p>ana(分开)+log(说)+$\rightarrow$将事物分成类来说</p>
-<p>by analogy      用类比的方式     </p>
-</blockquote>
-<p>anonymous     a.无名的，不具名的；匿名的；无特色的，无个体特征的</p>
-<blockquote>
-<p>an(无)+onym(名字)+ous(···的)</p>
-</blockquote>
-<p>anticipate     vt.预料，预期，期望；先于···行动，提前使用</p>
-<blockquote>
-<p>anti(先)+cip(拿)+ate(做)</p>
-</blockquote>
-<p>apparatus      n.器械，器具，仪器；机构，组织</p>
-<p>appease      vt.平息，抚慰，姑息</p>
-<p>appendix     n.阑尾</p>
-<p>applaud     vi.鼓掌，喝彩    vt.向···鼓掌，向···喝彩；称赞，赞许</p>
-<p>appliance     n.用具，器具，器械</p>
-<p>appraisal     n.估计，估量，评价</p>
-<h4 id="Word-list3-A"><a href="#Word-list3-A" class="headerlink" title="Word list3 (A)"></a>Word list3 (A)</h4><p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210417175951837.png" alt="image-20210417175951837"></p>
-<p>apt</p>
-]]></content>
-      <categories>
-        <category>English</category>
-      </categories>
-      <tags>
-        <tag>notes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mathematical Analysis</title>
-    <url>/2021/04/28/Mathematical%20analysis%20solution/</url>
-    <content><![CDATA[<p>网上冲浪发现一个巨佬学长，来自中科大</p>
-<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210428004904906.png" alt="image-20210428004904906"></p>
-<p><a href="http://home.ustc.edu.cn/~qifan/answers/MathematicalAnalysis_B2_ans.pdf">http://home.ustc.edu.cn/~qifan/answers/MathematicalAnalysis_B2_ans.pdf</a></p>
 ]]></content>
       <categories>
         <category>maths</category>
