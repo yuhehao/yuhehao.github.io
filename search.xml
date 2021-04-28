@@ -540,12 +540,37 @@
     <title>Discrete Mathematics</title>
     <url>/2021/04/18/Discrete%20Mathematics/</url>
     <content><![CDATA[<h2 id="离散数学-Discrete-Mathematics"><a href="#离散数学-Discrete-Mathematics" class="headerlink" title="离散数学 Discrete Mathematics"></a>离散数学 Discrete Mathematics</h2><h3 id="part-1-proposition-and-logic"><a href="#part-1-proposition-and-logic" class="headerlink" title="part 1 proposition and logic"></a>part 1 proposition and logic</h3><h4 id="命题-proposition"><a href="#命题-proposition" class="headerlink" title="命题 proposition"></a>命题 proposition</h4><p>A proposition is a declarative sentence that is either true or false.</p>
-<h4 id="真值-truth-value"><a href="#真值-truth-value" class="headerlink" title="真值 truth value"></a>真值 truth value</h4><h4 id="Simple-Proposition"><a href="#Simple-Proposition" class="headerlink" title="Simple Proposition:"></a>Simple Proposition:</h4><p>​    cannot be broken into 2 or more propositions</p>
-<h4 id="Compound-Proposition"><a href="#Compound-Proposition" class="headerlink" title="Compound Proposition:"></a>Compound Proposition:</h4><p>​    not simple</p>
-<h4 id="Negation-否定-neg"><a href="#Negation-否定-neg" class="headerlink" title="Negation (否定)  $\neg$"></a>Negation (否定)  $\neg$</h4><h4 id="conjunction-合取-and-wedge"><a href="#conjunction-合取-and-wedge" class="headerlink" title="conjunction (合取) and  $\wedge $"></a>conjunction (合取) and  $\wedge $</h4><h4 id="Disjunction-析取-or-vee"><a href="#Disjunction-析取-or-vee" class="headerlink" title="Disjunction (析取)  or $\vee$"></a>Disjunction (析取)  or $\vee$</h4><h4 id="Implication-→"><a href="#Implication-→" class="headerlink" title="Implication (→)"></a>Implication (→)</h4><h4 id="Bi-Implication-↔-："><a href="#Bi-Implication-↔-：" class="headerlink" title="Bi-Implication (↔)："></a>Bi-Implication (↔)：</h4><p>​    A$\leftrightarrow$B $\Leftrightarrow$(A$\rightarrow$B)$\wedge $(B$\rightarrow$A)</p>
-<h4 id="Precedence（优先级）："><a href="#Precedence（优先级）：" class="headerlink" title="Precedence（优先级）："></a>Precedence（优先级）：</h4><p>​      $ \neg$，$\wedge $，$\vee$，$\rightarrow$，$\leftrightarrow$</p>
+<ul>
+<li><p>真值 truth value</p>
+</li>
+<li><p>Simple Proposition: </p>
+</li>
+</ul>
+<p>  ​    cannot be broken into 2 or more propositions</p>
+<ul>
+<li><p>Compound Proposition: </p>
+<p>  not simple</p>
+</li>
+</ul>
+<h4 id="logic-operation"><a href="#logic-operation" class="headerlink" title="logic operation"></a>logic operation</h4><ul>
+<li><p>Negation (否定)  $\neg$</p>
+</li>
+<li><p>conjunction (合取) and  $\wedge $</p>
+</li>
+<li><p>Disjunction (析取)  or $\vee$</p>
+</li>
+<li><p>Implication (→)</p>
+</li>
+<li><p>Bi-Implication (↔)：</p>
+</li>
+</ul>
+<p>​    A$\leftrightarrow$B $\Leftrightarrow$(A$\rightarrow$B)$\wedge $(B$\rightarrow$A)</p>
+<ul>
+<li><strong>Precedence（优先级）</strong>：</li>
+</ul>
+<p>​      $ \neg$，$\wedge $，$\vee$，$\rightarrow$，$\leftrightarrow$</p>
 <h4 id="Well-Formed-Formulas"><a href="#Well-Formed-Formulas" class="headerlink" title="Well-Formed Formulas :"></a>Well-Formed Formulas :</h4><p>​    =propositional formulas=formulas</p>
-<h4 id="Translation"><a href="#Translation" class="headerlink" title="Translation:"></a>Translation:</h4><ul>
+<h4 id="Translation"><a href="#Translation" class="headerlink" title="** Translation**:"></a>** Translation**:</h4><ul>
 <li>if A then B   $\Leftrightarrow$  A$\rightarrow$B</li>
 <li>A only if B   $\Leftrightarrow$  A$\rightarrow$B</li>
 <li>A is a sufficient condition for B $\Leftrightarrow$  A$\rightarrow$B</li>
@@ -569,10 +594,14 @@
 <ul>
 <li>A$^{-1}$(T)$\subseteq$B$^{-1}$(T);</li>
 <li>A$\rightarrow$B is a tautology;</li>
-<li>A$\and$$\neg$B is a contradiction</li>
+<li>A$\land$$\neg$B is a contradiction</li>
 </ul>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418143455223.png" alt="image-20210418143455223"></p>
-<h4 id="个体和谓词-Individual-and-Predicate"><a href="#个体和谓词-Individual-and-Predicate" class="headerlink" title="个体和谓词 Individual and Predicate"></a>个体和谓词 Individual and Predicate</h4><h4 id="universal-quantifier-forall-and-existential-quantifier-exists"><a href="#universal-quantifier-forall-and-existential-quantifier-exists" class="headerlink" title="universal quantifier $\forall$ and existential quantifier$\exists$"></a>universal quantifier $\forall$ and existential quantifier$\exists$</h4><h4 id="Types-of-WFFs-1"><a href="#Types-of-WFFs-1" class="headerlink" title="Types of WFFs:"></a>Types of WFFs:</h4><ul>
+<h4 id="个体和谓词-Individual-and-Predicate"><a href="#个体和谓词-Individual-and-Predicate" class="headerlink" title="个体和谓词 Individual and Predicate"></a>个体和谓词 Individual and Predicate</h4><ul>
+<li><p> universal quantifier $\forall$ and existential quantifier$\exists$</p>
+</li>
+<li><p>Types of WFFs:</p>
+</li>
 <li><p>logically valid : always true</p>
 </li>
 <li><p>unsatisfiable : always false</p>
@@ -580,23 +609,23 @@
 <li><p>satisfiable : it is true for at least one truth assignment</p>
 </li>
 <li><p>important:<img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420213108749.png" alt="image-20210420213108749"></p>
-<p>Prop:</p>
+<p><strong>Prop</strong>:</p>
 </li>
-<li><p>$$\forall x(A(x) \and B(x)) \equiv  \forall xA(x) \and \forall xB(x)$$</p>
+<li><p>$$\forall x(A(x) \land B(x)) \equiv  \forall xA(x) \land \forall xB(x)$$</p>
 </li>
-<li><p>$$\exists x(A(x) \or B(x)) \equiv \exists xA(x) \or \exists xB(x)$$</p>
+<li><p>$$\exists x(A(x) \lor B(x)) \equiv \exists xA(x) \lor \exists xB(x)$$</p>
 </li>
 </ul>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418145546880.png" alt="image-20210418145546880"></p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418145604913.png" alt="image-20210418145604913"></p>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210418145618260.png" alt="image-20210418145618260"></p>
 <p>(mid,2019)$$\forall x(\forall y(N(x,y) \to \forall z(G(z,x) \land G(z, y) \lor D(z, x) \lor D(z,y))))$$</p>
-<h3 id="part-2-set-theory"><a href="#part-2-set-theory" class="headerlink" title="part 2 set theory"></a>part 2 set theory</h3><p>Principle of Inclusion-Exclusion</p>
+<h4 id="Logic-translation：mid"><a href="#Logic-translation：mid" class="headerlink" title="Logic translation：mid"></a>Logic translation：mid</h4><h3 id="part-2-set-theory"><a href="#part-2-set-theory" class="headerlink" title="part 2 set theory"></a>part 2 set theory</h3><p>Principle of Inclusion-Exclusion</p>
 <p>cover</p>
 <p>partition is disjoint cover</p>
 <p>proper:真子集</p>
 <p>complement:补集</p>
-<p>$p(A)={x|x\sube A}$:the <strong>power set</strong>  of A</p>
+<p>$p(A)={x|x\sube  A}$:the <strong>power set</strong>  of A</p>
 <p>disjoint:$$A\cap B\neq \emptyset$$</p>
 <p>XOR$\oplus$: $$A\oplus B =(A-B)\cup(B-A)$$: the symmetric difference of A and B.</p>
 <p>时间原因，写的仓促，详见<a href="https://vixbob.moe/20.html">vixbob’s set theory</a></p>
@@ -638,7 +667,7 @@
 <p>$$let \  {a_n},{b_n} \ be \ two \ sequences\ such\ that \ for\ all\ n\geqslant s,a_n=\sum_{k=s}^{n}\binom{n}{k}b_k.Then\ b_n=\sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}a_k\ (n\geqslant s)$$</p>
 </li>
 </ul>
-<p>$$<br>\begin{aligned}<br>\sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}a_k  &amp; = \sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}\sum_{i=s}^{k}\binom{k}{i}b_i \&amp; =\sum_{k=s}^{n}\sum_{i=s}^{k}(-1)^{n-k}\binom{n}{k}\binom{k}{i}b_i\&amp;=\sum_{i=s}^n\sum_{k=i}^n(-1)^{n-k}\binom{n}{k}\binom{k}{i}b_i\&amp;=b_n<br>\end{aligned}ss<br>$$</p>
+<p>$$<br>\begin{aligned}<br>\sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}a_k  &amp; = \sum_{k=s}^{n}(-1)^{n-k}\binom{n}{k}\sum_{i=s}^{k}\binom{k}{i}b_i \&amp; =\sum_{k=s}^{n}\sum_{i=s}^{k}(-1)^{n-k}\binom{n}{k}\binom{k}{i}b_i\&amp;=\sum_{i=s}^n\sum_{k=i}^n(-1)^{n-k}\binom{n}{k}\binom{k}{i}b_i\&amp;=b_n<br>\end{aligned}<br>$$</p>
 <p>背下来</p>
 <ul>
 <li>example:</li>
@@ -658,7 +687,7 @@
 <li>$$a(x) \cdot B(x) = \sum_{r=o}^{\infty}(\sum_{j=0}^{r}a_j b_{r-j})x^r$$</li>
 </ul>
 <p>pf:</p>
-<p>$$\sum_{m=0}^{\infty}a_{m}x^{m}\cdot \sum_{n=0}^{\infty}b_{n}x^{n}\=\sum_{m=0}^{\infty}\sum_{n=0}^{\infty}a_{m}b_{n}x^{m+n}\=\sum_{r=0}^{\infty}\sum_{j=0}^{r}(a_{j}b_{r-j})x^r\quad[m+n=r]$$</p>
+<p>$$\sum_{m=0}^{\infty}a_{m}x^{m}\cdot \sum_{n=0}^{\infty}b_{n}x^{n} \ =\sum_{m=0}^{\infty}\sum_{n=0}^{\infty}a_{m}b_{n}x^{m+n}\ =\sum_{r=0}^{\infty}\sum_{j=0}^{r}(a_{j}b_{r-j})x^r\quad[m+n=r]$$</p>
 <ul>
 <li><p>inverse:</p>
 <p>we say that B(x) is an inverse of A(x) if A(x)B(x)=1.</p>
@@ -666,7 +695,7 @@
 <li><ul>
 <li>the inverse of A(x) : $A^{-1}(x)$</li>
 <li>When a(x) has an inverse ,define $\frac{C(x)}{A(x)}=A^{-1}(x)\cdot C(x).$</li>
-<li>example:let $A(x)=\sum_{r=0}^{\infty}x^r.\then \ A^{-1}(x)=1-x.$</li>
+<li>example:let $A(x)=\sum_{r=0}^{\infty}x^r.\ then \ A^{-1}(x)=1-x.$</li>
 </ul>
 </li>
 </ul>
@@ -675,7 +704,7 @@
 <p>​    $$let u \in R \ and \ r \in N.$$</p>
 <p>​    $$\binom{u}{r}= \left{ \begin{array}{}u(u-1)\cdots(u-r+1)/r! &amp; (r&gt;0) \1 &amp; (r=0)\end{array}\right.$$</p>
 </li>
-<li><p> $$let\ \alpha\in R\backslash{0}\ and\ u\in Q.\(1+\alpha)^{u}=\sum_{r=0}^{\infty}\binom{u}{r}\alpha^rx^r=\sum_{r=0}^{\infty}\frac{u(u-1)\cdots(u-r+1)}{r!}\alpha^rx^r$$</p>
+<li><p> $$let\ \alpha\in R\backslash{0}\ and\ u\in Q.\ (1+\alpha)^{u}=\sum_{r=0}^{\infty}\binom{u}{r}\alpha^rx^r=\sum_{r=0}^{\infty}\frac{u(u-1)\cdots(u-r+1)}{r!}\alpha^rx^r$$</p>
 </li>
 <li><p>$$(1+\alpha)^{-n}=\sum_{r=0}^{\infty}\binom{-n}{r}\alpha^rx^r=\sum_{r=0}^{\infty}(-1)^r\binom{n+r-1}{r}\alpha^rx^r$$</p>
 </li>
@@ -733,7 +762,7 @@ $$</code></pre>
 </ul>
 </li>
 </ul>
-<h4 id="Pigeonhole-Principle-鸽笼原理，又名抽屉原理"><a href="#Pigeonhole-Principle-鸽笼原理，又名抽屉原理" class="headerlink" title="Pigeonhole Principle 鸽笼原理，又名抽屉原理"></a>Pigeonhole Principle 鸽笼原理，又名抽屉原理</h4><p> example:<br>prove :$let\  n\in Z^+.Let\ A \sube{1,2,\ldots,2n}\ have\ n+1\ elements.Then\ \exists x,y\in A \ such \ that\ x|y.$$ </p>
+<h4 id="Pigeonhole-Principle-鸽笼原理，又名抽屉原理"><a href="#Pigeonhole-Principle-鸽笼原理，又名抽屉原理" class="headerlink" title="Pigeonhole Principle 鸽笼原理，又名抽屉原理"></a>Pigeonhole Principle 鸽笼原理，又名抽屉原理</h4><p> example:<br>prove :$let\  n\in Z^+.Let\ A \sube  {1,2,\ldots,2n}\ have\ n+1\ elements.Then\ \exists x,y\in A \ such \ that\ x|y.$$ </p>
 <p>answer: </p>
 <p>considering that $u\cdot 2^x$,$u\in[n]$ and $x\in N$.</p>
 <p>$\forall t \in {1,2,\dots,2n}$ can be written in the formal of $u\cdot 2^x$.</p>
@@ -774,7 +803,7 @@ $$</code></pre>
 </li>
 <li><p>Principle of Inclusion-Exclusion:</p>
 <p>使用容斥原理证明该公式。设将n个两两不同的元素，划分到k个两两不同的集合（允许空集）的方案数为$G_i$，将n个两两不同的元素，划分到k个两两不同的非空集合（不允许空集）的方案数为$F_i$。</p>
-<p>Obviously,<br>$$<br>G_i=k^n\G_i=\sum_{j=0}^i\binom{i}{j}F_j<br>$$<br>by 二项式反演:<br>$$<br>\begin{aligned} F_i&amp;=\sum\limits_{j=0}^{i}(-1)^{i-j}\binom{i}{j}G_j\ &amp;=\sum\limits_{j=0}^{i}(-1)^{i-j}\binom{i}{j}j^n\ &amp;=\sum\limits_{j=0}^{i}\dfrac{i!(-1)^{i-j}j^n}{j!(i-j)!} \end{aligned}<br>$$<br>considering that the difference bewteen $F_i$ and $S_2(n,i)$.the boxes in $S_2$ is not distinguishable .so $F_i$ is $i!$ times as much as $S_2$</p>
+<p>Obviously,<br>$$<br>G_i=k^n\ G_i=\sum_{j=0}^i\binom{i}{j}F_j<br>$$<br>by 二项式反演:<br>$$<br>\begin{aligned} F_i&amp;=\sum\limits_{j=0}^{i}(-1)^{i-j}\binom{i}{j}G_j\ &amp;=\sum\limits_{j=0}^{i}(-1)^{i-j}\binom{i}{j}j^n\ &amp;=\sum\limits_{j=0}^{i}\dfrac{i!(-1)^{i-j}j^n}{j!(i-j)!} \end{aligned}<br>$$<br>considering that the difference bewteen $F_i$ and $S_2(n,i)$.the boxes in $S_2$ is not distinguishable .so $F_i$ is $i!$ times as much as $S_2$</p>
 </li>
 </ul>
 </li>
@@ -806,7 +835,7 @@ $$</code></pre>
 </ul>
 </li>
 </ul>
-<pre><code>![image-20210420140446623](https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420140446623.png)![image-20210420140504115](https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420140504115.png)</code></pre>
+<p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420140446623.png" alt="image-20210420140446623"><br><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210420140504115.png" alt="image-20210420140504115"></p>
 <ul>
 <li>easy combination and permutation application:</li>
 </ul>
@@ -847,7 +876,61 @@ $$</code></pre>
 <p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/eb11006127c8cfbc72535aadf9304c83.svg" alt="img"></p>
 <p> 表示称出4克有2种方案，是1+3和2+2，以此类推，超出10克便无法称出。</p>
 <p>加括号是第二类斯特林数</p>
-<p>已整理ppt：lec1,2,3,4(未举例);5,6(简略);lec7,8,9,10,11,12</p>
+<p>已整理ppt：lec1,2,3,4(未举例);lec7,8,9,10,11,12</p>
+<p>lec5,lec6（简要）</p>
+<h3 id="part-3-Number-Theory-数论"><a href="#part-3-Number-Theory-数论" class="headerlink" title="part 3 Number Theory 数论"></a>part 3 Number Theory 数论</h3><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><p>Let $Z$ be the set of integers. Let $a,b\in Z$  and $a\neq 0$</p>
+<ul>
+<li>a devides b (整除): there is an integer $c\in Z$ such that $b=ac$<ul>
+<li>a is a divisor（因子）of b;b is mutiple of a </li>
+<li>$a \mid b$: a  divides b ;$a\nmid b$: a does not divide b </li>
+</ul>
+</li>
+<li>$n \in {2,3,\ldots}$is a prime if the only positive divisors of n are 1 and n.</li>
+<li>if n is not a prime , n is a composite（合数）（不讨论0,1）</li>
+</ul>
+<h4 id="Fundamental-Theorem-of-Arithmetic-（算术学的基本定理）"><a href="#Fundamental-Theorem-of-Arithmetic-（算术学的基本定理）" class="headerlink" title="Fundamental Theorem of Arithmetic （算术学的基本定理）"></a>Fundamental Theorem of Arithmetic （算术学的基本定理）</h4><ul>
+<li><p>theorem: every intr=eger n&gt;1 can be uniquely written as $n=p_1^{e_1}\cdots p_r^{e_r}$,where $p_1,\dots,p_r$ are distinct primes ,$p_1&lt;\cdots &lt;p_r$ and $e_1,\ldots,e_r \geqslant 1$.</p>
+</li>
+<li><p>prove: 第二类数学归纳法 mathematical induction</p>
+<ul>
+<li><p>existence:</p>
+<ul>
+<li><p>显然n=2,3,4,5满足 </p>
+</li>
+<li><p>假设n$\leqslant$k满足,  Induction hypothesis: suppose true for integers $2\leqslant n \leqslant k$</p>
+</li>
+<li><p>Prove the statement for n=k+1</p>
+<ul>
+<li><p>if(n=k+1 is a prime  $n=(k+1)^1$  QED</p>
+</li>
+<li><p>else n=k+1 is composite ,$n=n_1n_2$,by introduction hypothesis，</p>
+<p>$n1=p_1^{\alpha_1 }\cdots p_r^{\alpha_r},n2=q_1^{\beta_1 }\cdots q_s^{\beta_s}$</p>
+<p>$n=n_1n_2=p_1^{\alpha_1 }\cdots p_r^{\alpha_r}\cdot q_1^{\beta_1 }\cdots q_s^{\beta_s}$has the expected form.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>uniqueness:</p>
+<ul>
+<li>待补充</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>The Well-Ordering Property良序公理：</p>
+<p>​    every non-empty subset of $N(Z^+)$ has a least element .$//\forall S\in p(N) \backslash {\emptyset},\exists s_0\in S$ such that $s_0\leqslant s$ for all $s \in S$.</p>
+</li>
+<li><p>Division Algorithm带余除法:</p>
+<p>​    let $a,b\in Z$and b&gt;0.Then  there are unique integers q,r such that $0\leqslant r&lt;b$ and $a=bq+r$.</p>
+<ul>
+<li>existence:<pre><code>let</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>mod  逆元，zn*···</p>
+<h4 id="rsa"><a href="#rsa" class="headerlink" title="rsa"></a>rsa</h4><p>- </p>
 ]]></content>
       <categories>
         <category>maths</category>
