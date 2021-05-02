@@ -629,7 +629,7 @@
 <p>partition is disjoint cover</p>
 <p>proper:真子集</p>
 <p>complement:补集</p>
-<p>$p(A)={x|x\sube  A}$:the <strong>power set</strong>  of A</p>
+<p>$p(A)={x|x\subseteq  A}$:the <strong>power set</strong>  of A</p>
 <p>disjoint:$A\cap B\neq \emptyset$</p>
 <p>XOR$\oplus$: $A\oplus B =(A-B)\cup(B-A)$: the symmetric difference of A and B.</p>
 <p>时间原因，写的仓促，详见<a href="https://vixbob.moe/20.html">vixbob’s set theory</a></p>
@@ -766,7 +766,7 @@ $$</code></pre>
 </ul>
 </li>
 </ul>
-<h4 id="Pigeonhole-Principle-鸽笼原理，又名抽屉原理"><a href="#Pigeonhole-Principle-鸽笼原理，又名抽屉原理" class="headerlink" title="Pigeonhole Principle 鸽笼原理，又名抽屉原理"></a>Pigeonhole Principle 鸽笼原理，又名抽屉原理</h4><p> example:<br>prove :$let\  n\in Z^+.Let\ A \sube  {1,2,\ldots,2n}\ have\ n+1\ elements.Then\ \exists x,y\in A \ such \ that\ x|y.$$ </p>
+<h4 id="Pigeonhole-Principle-鸽笼原理，又名抽屉原理"><a href="#Pigeonhole-Principle-鸽笼原理，又名抽屉原理" class="headerlink" title="Pigeonhole Principle 鸽笼原理，又名抽屉原理"></a>Pigeonhole Principle 鸽笼原理，又名抽屉原理</h4><p> example:<br>prove :$let\  n\in Z^+.Let\ A \subseteq  {1,2,\ldots,2n}\ have\ n+1\ elements.Then\ \exists x,y\in A \ such \ that\ x|y.$$ </p>
 <p>answer: </p>
 <p>considering that $u\cdot 2^x$,$u\in[n]$ and $x\in N$.</p>
 <p>$\forall t \in {1,2,\dots,2n}$ can be written in the formal of $u\cdot 2^x$.</p>
@@ -903,7 +903,7 @@ $$</code></pre>
 <p>prove:</p>
 <ul>
 <li><p>existence:</p>
-<pre><code>let $S=\&#123;a-bx:x\in Z \ and\ a-bx\geqslant0\&#125;.$Then$S\neq \emptyset \ and\ S \sube N$,$S$ has a least element , say $r=a-bq\geqslant0$</code></pre>
+<pre><code>let $S=\&#123;a-bx:x\in Z \ and\ a-bx\geqslant0\&#125;.$Then$S\neq \emptyset \ and\ S \subseteq N$,$S$ has a least element , say $r=a-bq\geqslant0$</code></pre>
 <p>​        if $r\geqslant b$,then $r-b=a-b(q+1)\in S$ and $r-b&lt;r$.The contradiction shows that $0\leqslant r&lt;b.$</p>
 </li>
 <li><p>uniqueness:Suppose that $q’,r’\in Z，0\leqslant r’&lt;b$ and $a=bq’+r’$</p>
@@ -936,14 +936,14 @@ $$</code></pre>
 </li>
 </ul>
 </li>
-<li><p>theorem(Congruence): Let $n\in Z^+$. For any $a\in Z$, there is a unique integer $r$, such that $0\leqslant r&lt; n$ and $a\equiv r (mod \ n)$.</p>
+<li><p>theorem(Congruence): Let $n\in Z^+$. For any $a\in Z$, there is a unique integer $r$, such that $0\leqslant r&lt; n$ and $a\equiv r \pmod n$.</p>
 <p>prove:</p>
 <ul>
 <li><p>Existence: by division algorithm,$\exists q,r\in Z$ such that $0\leqslant r&lt;n,a=qn+r$</p>
-<p>​    $a\equiv r(mod\ n)$</p>
+<p>​    $a\equiv r\pmod n$</p>
 </li>
-<li><p>Uniqueness:Suppose that $0\leqslant r’ &lt;n$ and $a\equiv r’(mod\ n)$</p>
-<p>​    $|r-r’|&lt;n$ and $r\equiv r’(mod\ n)$</p>
+<li><p>Uniqueness:Suppose that $0\leqslant r’ &lt;n$ and $a\equiv r’\pmod n$</p>
+<p>​    $|r-r’|&lt;n$ and $r\equiv r’\pmod n$</p>
 <p>​    $|r-r’|&lt;n$ and $n|(r-r’)$</p>
 <p>​    $r=r’$</p>
 </li>
@@ -986,7 +986,7 @@ $$</code></pre>
 </li>
 </ul>
 <h4 id="Ideal-理想"><a href="#Ideal-理想" class="headerlink" title="Ideal 理想"></a>Ideal 理想</h4><ul>
-<li><p>Definion:Let $\emptyset \neq I \sube Z$.I is called an ideal of Z if </p>
+<li><p>Definion:Let $\emptyset \neq I \subseteq Z$.I is called an ideal of Z if </p>
 <ul>
 <li>$a,b\in I\Rightarrow a+b\in I$;and</li>
 <li>$a\in I,r\in Z \Rightarrow ra\in I$</li>
@@ -1035,18 +1035,110 @@ $$</code></pre>
 </li>
 </ul>
 <h4 id="Z-n-Z-n"><a href="#Z-n-Z-n" class="headerlink" title="$Z_n,Z_n^*$"></a>$Z_n,Z_n^*$</h4><ul>
-<li><p>逆元，zn*···Let $ a,b\in Z $ and ${a,b}\neq {0}$.Then $$</p>
+<li><p>$Z_n$:</p>
+<ul>
+<li><p>Define: Letn be any positive integer.  $Z_n$ is defined as the set of all residue classes modulo n.</p>
+</li>
+<li><p>$Z_n={[0]_n,[1]_n,\ldots,[n-1]_n}={[1]_n,[2]_n,\ldots,[n-1]_n,[n]_n}=\cdots$</p>
+</li>
+<li><ul>
+<li>addition: $[a]_n+[b]_n=[a+b]_n$</li>
+<li>subtraction:$[a]_n-[b]_n=[a-b]_n$</li>
+<li>multiplication:$[a]_n\cdot [b]_n=[a\cdot b]_n$</li>
+</ul>
+</li>
+<li><p>Remark(well-defined):if $a\equiv a’\pmod n$ and $b\equiv b’\pmod n$,then$a\pm b\equiv a’\pm b’\pmod n$ and $ab=a’b’\pmod n$.</p>
+</li>
+<li><p>Hence,$[a]_n\pm [b]_n=[a’]_n+[b’]_n;[a]_n\cdot [b]_n=[a’]_n\cdot [b’]_n$</p>
+</li>
+<li><ul>
+<li>$$<br>a\equiv a’\pmod n\Rightarrow n|(a-a’) \Rightarrow \exists x \ such\ that\ a-a’=nx\<br>b\equiv b’\pmod n\Rightarrow n|(b-b’) \Rightarrow \exists x \ such\ that\ b-b’=ny\<br>(a+b)-(a’+b’)=nx+ny\<br>(a-b)-(a’-b’)=nx-ny\<br>ab-a’b’=a(b-b’)+b’(a-a’)=any+b’nx<br>$$</li>
+</ul>
 </li>
 </ul>
-<h4 id="rsa"><a href="#rsa" class="headerlink" title="rsa"></a>rsa</h4><ul>
-<li></li>
+</li>
+<li><p>$Z_n^*$:</p>
+<ul>
+<li>inverse:Let $n\in Z^+$ and let $[a]_n \in Z_n$.$[s]_n\in Z_n$ is called an inverse of $[a]_n$ if $[a]_n[s]_n=[1]_n$.</li>
+<li>division:if $[a]_n$ has an inverse $[s]_n$,define $\frac{[b]_n}{[a]_n}=[b]_n\cdot [s]_n$</li>
+<li>theorem: Let $n\in Z^+$.$[a]_n\in Z_n$ has an inverse if and only if $gcd(a,n)=1$<ul>
+<li>Only if: $\exists s\ s.t.[a]_n[s]_n\equiv [1];\exists t,as-1=nt;gcd(a,n)=1$</li>
+<li>if:$\exists s,t\ s.t.as+nt=1;as\equiv 1\pmod n$</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#gcd</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gcd</span>(<span class="params">a,b</span>):</span></span><br><span class="line">    <span class="keyword">if</span>(b==<span class="number">0</span>):</span><br><span class="line">        <span class="keyword">return</span> a</span><br><span class="line">    <span class="keyword">return</span> gcd(b,a%b)</span><br><span class="line"><span class="comment">#exgcd gcd(a,b)=as+bt</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">EEA</span>(<span class="params">a,b</span>):</span></span><br><span class="line">    <span class="keyword">if</span> b==<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>,<span class="number">0</span>)</span><br><span class="line">    (s,t)=EEA(b,a%b)</span><br><span class="line">    <span class="keyword">return</span> (t,s-a//b*t)</span><br><span class="line"><span class="comment">#b=a^&#123;-1&#125; (mod n)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">inverse</span>(<span class="params">a,n</span>):</span></span><br><span class="line">    b = EEA(a,n)[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">if</span>(b&lt;<span class="number">0</span>):</span><br><span class="line">        b+=n</span><br><span class="line">    <span class="keyword">return</span> b</span><br><span class="line"><span class="comment">#a^e mod n</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">multiply_and_square</span>(<span class="params">a,e,n</span>):</span></span><br><span class="line">    <span class="keyword">if</span>(e==<span class="number">0</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    res = multiply_and_square(a,e//<span class="number">2</span>,n)</span><br><span class="line">    <span class="keyword">if</span>(e%<span class="number">2</span>==<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">return</span> (res*res*a)%n</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> (res*res)%n</span><br></pre></td></tr></table></figure>
-
-
-<p>已整理ppt：lec1,2,3,4(未举例);lec7,8,9,10,11,12</p>
+</li>
+<li>Let $n\in Z^+$.Define $Z_n^*={[a]_n\in Z_n:gcd(a,n)=1}$<ul>
+<li>if n is prime ,then $Z_n^*={1,2,\ldots,n-1}$</li>
+<li>if n is composite ,then $Z_n^*\subset Z_n$</li>
+<li>example:$Z_5^*={1,2,3,4};Z_6^*={1,5}$<h4 id="Euler’s-Phi-Function-phi-n"><a href="#Euler’s-Phi-Function-phi-n" class="headerlink" title="Euler’s Phi Function  ($\phi (n)$)"></a>Euler’s Phi Function  ($\phi (n)$)</h4></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>$\phi(n)=|Z_n^*|$ for every $n\in Z^+$ ($\phi (n)$ is the number of intergers $a\in [n]$ such that $gcd(a,n)=1$)</p>
+</li>
+<li><p>property:</p>
+<ul>
+<li>if p is a prime, then $\phi(p^e)=p^{e-1}(p-1)$ for any $e\in Z^+$<ul>
+<li>prove:let $x\in [p^e]$. Then $gcd(x,p^e)\neq 1$ iff$p|x$ iff$x=p,2p,\ldots,p^{e-1}\cdot p$</li>
+<li>$\phi(p^e)=p^e-p^{e-1}=p^{e-1}(p-1)$</li>
+</ul>
+</li>
+<li>if n=pq for two different primes p and q ,then $\phi(n)=(p-1)(q-1)$.<ul>
+<li>prove容斥: $A={1,2,\ldots,pq},A_p={x\in A:p|x},A_q={x\in A:q|x}$</li>
+<li>$Z_n^*=A-A_p\cup A_q$</li>
+<li>$|Z_n^*|=|A-A_p\cup A_q|=|A|-|A_p\cup A_q|=|A|-|A_p|-|A_q|+|A_p\cap A_q|=(p-1)(q-1)$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Euler’s Theorem</strong>:Let $n\geqslant1$ and $\alpha \in Z_n^*$. Then$\alpha^{\phi(n)}\equiv 1 \pmod n$</p>
+</li>
+<li><p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210501232435801.png" alt="image-20210501232435801"><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210501232452974.png" alt="image-20210501232452974"></p>
+</li>
+<li><p><strong>Fermat’s Little Theorem</strong>:if p is a prime and $\alpha \in Z_p$. Then $\alpha^p \equiv \alpha \pmod p$.</p>
+</li>
+<li><p>•    This is a corollary of Euler’s theorem for $n=p$</p>
+</li>
+</ul>
+<h4 id="Cryptography-rsa"><a href="#Cryptography-rsa" class="headerlink" title="Cryptography_rsa"></a>Cryptography_rsa</h4><ul>
+<li><ol>
+<li>凭空产生两个质数$p,q$</li>
+<li>设$N=p \times q$</li>
+<li>根据欧拉函数$r=\phi(N)=(p-1)(q-1)$</li>
+<li>凭空产生一个小于r的整数$e$使得$e$和$r$互质​</li>
+<li>求$d$使得$ed\equiv1\pmod n$</li>
+<li>销毁$p,q$,没有人知道$p,q$是多少<br>得出$(N,e)$是公钥,$(N,d)$是私钥<br><a href="https://edgration.github.io/2020/08/02/RSA/">参考链接</a></li>
+</ol>
+</li>
+<li><p>Alice得到公钥和私钥，Alice把公钥告诉Bob，自己把私钥藏起来不告诉任何人。Bob给Alice发消息。</p>
+<ul>
+<li><p>加密：<br>假设Bob的消息是$n$,密码是$c$,手上有公钥$(N,e)$<br>$$<br>c\equiv n^e \pmod N<br>$$<br>Bob将加密后的$c$发给Alice</p>
+</li>
+<li><p>解密：</p>
+<p>Alice得到密码$c$,根据私钥$(N,d)$<br>$$<br>n \equiv c^d \pmod N<br>$$<br>解码得到$n$</p>
+</li>
+<li><p>原理：<br>$$<br>c\equiv n^e \pmod N \<br>c^d \equiv n^{e\cdot d} \pmod N<br>$$<br>因为$e\cdot d \equiv 1 \pmod r$,即$e\cdot d \equiv h \cdot r +1 \pmod N$,其中$h$是自然数<br>$$<br>c^d\equiv n^{h\cdot r+1}\pmod N\<br>c^d\equiv n^{h\cdot \phi(n)+1}\pmod N\<br>c^d\equiv n\cdot n^{h\cdot \phi(n)}\pmod N\<br>c^d\equiv n\cdot (n^{\phi(n)})^h\pmod N\<br>$$<br>根据欧拉定理$a^{\phi(n)}\equiv 1 \pmod n$<br>$$<br>c^d \equiv n\times 1^h \pmod N\<br>c^d \equiv n \pmod N<br>$$</p>
+</li>
+</ul>
+</li>
+<li><p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210501235124705.png" alt="image-20210501235124705"></p>
+</li>
+<li><p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210501235250730.png" alt="image-20210501235250730"></p>
+</li>
+<li><p>快速幂，取模Modulo Exponentiation（Square-and-Multiply Algorithm）</p>
+</li>
+<li><p><img src="https://my-blog-picture-hehy.oss-cn-beijing.aliyuncs.com/img/image-20210502003438123.png" alt="image-20210502003438123"></p>
+</li>
+<li><p>Euclidean Algorithm (EA)辗转相除算gcd</p>
+</li>
+<li><p>Extended Euclidean Algorithm (EEA) 算as+bt的s和t<br><img src="C:\Users\hhy\AppData\Roaming\Typora\typora-user-images\image-20210502003751598.png" alt="image-20210502003751598"></p>
+<p><img src="C:\Users\hhy\AppData\Roaming\Typora\typora-user-images\image-20210502003729049.png" alt="image-20210502003729049"></p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#gcd</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gcd</span>(<span class="params">a,b</span>):</span></span><br><span class="line">    <span class="keyword">if</span>(b==<span class="number">0</span>):</span><br><span class="line">        <span class="keyword">return</span> a</span><br><span class="line">    <span class="keyword">return</span> gcd(b,a%b)</span><br><span class="line"><span class="comment">#exgcd gcd(a,b)=as+bt</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">EEA</span>(<span class="params">a,b</span>):</span></span><br><span class="line">    <span class="keyword">if</span> b==<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>,<span class="number">0</span>)</span><br><span class="line">    (s,t)=EEA(b,a%b)</span><br><span class="line">    <span class="keyword">return</span> (t,s-a//b*t)</span><br><span class="line"><span class="comment">#b=a^&#123;-1&#125; (mod n)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">inverse</span>(<span class="params">a,n</span>):</span></span><br><span class="line">    b = EEA(a,n)[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">if</span>(b&lt;<span class="number">0</span>):</span><br><span class="line">        b+=n</span><br><span class="line">    <span class="keyword">return</span> b</span><br><span class="line"><span class="comment">#a^e mod n</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">multiply_and_square</span>(<span class="params">a,e,n</span>):</span></span><br><span class="line">    <span class="keyword">if</span>(e==<span class="number">0</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    res = multiply_and_square(a,e//<span class="number">2</span>,n)</span><br><span class="line">    <span class="keyword">if</span>(e%<span class="number">2</span>==<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">return</span> (res*res*a)%n</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> (res*res)%n</span><br><span class="line"><span class="comment">#rsa_enc</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">RSA_enc</span>(<span class="params">p,q,e,m</span>):</span></span><br><span class="line">    c = multiply_and_square(m,e,p*q)</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line"><span class="comment">#rsa_dec</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">RSA_dec_given_pq</span>(<span class="params">p,q,e,c</span>):</span></span><br><span class="line">    m = multiply_and_square(c,inverse(e,(p-<span class="number">1</span>)*(q-<span class="number">1</span>)),p*q)</span><br><span class="line">    <span class="keyword">return</span> m</span><br></pre></td></tr></table></figure>
+<h4 id="图论-Graph"><a href="#图论-Graph" class="headerlink" title="图论 Graph"></a>图论 Graph</h4><p>已整理ppt：lec1,2,3,4(未举例);lec7,8,9,10,11,12</p>
 <p>lec5,lec6（简要）</p>
-<p>lec13,14part</p>
+<p>lec13,14,15,16（16页前）</p>
 ]]></content>
       <categories>
         <category>maths</category>
