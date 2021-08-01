@@ -889,4 +889,628 @@ $$</code></pre>
         <tag>notes</tag>
       </tags>
   </entry>
+  <entry>
+    <title>cs100</title>
+    <url>/2021/04/30/cs100/</url>
+    <content><![CDATA[<p>•    Lecture 1: Intro/C program structure<br>•    Lecture 2: Data types, operators and expressions<br>•    Lecture 3: Simple input/output<br>•    Lecture 4: Control flow<br>•    Lecture 5: Functions<br>•    Lecture 6: Pointers<br>•    Lecture 7: Arrays<br>•    Lecture 8: Character strings<br>•    Lecture 9: Structures<br>•    Lecture 10: Recursion</p>
+<p>•    Lecture 11: Algorithms and more advanced C<br>•    Lecture 12: Revision of C<br>•    Lecture 13: Object-Oriented Programming in C++<br>•    Lecture 14: Inheritance<br>•    Lecture 15: Polymorphism, STL templates<br>•    Lecture 16: STL data structures<br>•    Lecture 17: Memory management in C++<br>•    Lecture 18: Structuring your code<br>•    Lecture 19: Coding standards<br>•    Lecture 20: CMake</p>
+<p>lec1-20</p>
+<p>mind!~ 头文件写没写</p>
+<h3 id="lec2"><a href="#lec2" class="headerlink" title="lec2:"></a>lec2:</h3><h4 id="Date-Types"><a href="#Date-Types" class="headerlink" title="Date Types:"></a>Date Types:</h4><ul>
+<li><p>how many memory cells are reserved for it </p>
+<ul>
+<li>Integers<ul>
+<li>short (2 bytes – 16 bits)</li>
+<li>int (2 bytes?)，64位机中为4 bytes</li>
+<li>long 32 bits (4 bytes)</li>
+<li>unsigned (2 bytes)</li>
+<li>unsigned short (2 bytes)</li>
+<li>unsigned long 32 bits (4 bytes)</li>
+</ul>
+</li>
+<li>Floating Points<ul>
+<li>float (4 byte, or 32 bits)</li>
+<li>double (8 bytes, or 64 bits)</li>
+</ul>
+</li>
+<li>Characters<ul>
+<li>1 byte</li>
+<li>（128 distinct characters in the ASCII character set.）</li>
+<li>（Two C character types:<br>•    char (1 byte or 8 bits, range: [–128, 127]<br>•    unsigned char (1 byte or 8 bits, range: [0, 255]）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&lt; data type &gt; &lt; name &gt;</p>
+</li>
+<li><p>ASCII:<img src="http://119.28.10.49/images/2021/08/01/20210801225449.png" alt="image-20210429234842778"></p>
+</li>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210801225506.png" alt="image-20210429234948450"></p>
+</li>
+<li><p>++i 返回值是（i+1）；i++返回值是i  （先加再返回和先返回再加）（返回指表达式值）</p>
+</li>
+<li><p>const</p>
+</li>
+<li><p>#define 替换</p>
+</li>
+<li><p>Full List of Operators with Precedence优先级：<img src="http://119.28.10.49/images/2021/08/01/20210801225537.png" alt="image-20210430000302443"><br><img src="http://119.28.10.49/images/2021/08/01/20210801225625.png" alt="image-20210430000307349"></p>
+</li>
+<li><p>计算时不同类型升级<img src="http://119.28.10.49/images/2021/08/01/20210801225653.png" alt="image-20210430000428606"></p>
+</li>
+<li><p>printf()函数：<img src="http://119.28.10.49/images/2021/08/01/20210801225715.png" alt="image-20210430000543736"></p>
+</li>
+<li><p>scanf()取地址</p>
+<h3 id="lec3"><a href="#lec3" class="headerlink" title="lec3:"></a>lec3:</h3></li>
+</ul>
+<p>example:</p>
+<p>problem</p>
+]]></content>
+      <categories>
+        <category>c</category>
+        <category>cpp</category>
+      </categories>
+      <tags>
+        <tag>notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Discrete_Mathematics_part2</title>
+    <url>/2021/08/02/Discrete_Mathematics_part2/</url>
+    <content><![CDATA[<h2 id="离散数学-Discrete-Mathematics"><a href="#离散数学-Discrete-Mathematics" class="headerlink" title="离散数学 Discrete Mathematics"></a>离散数学 Discrete Mathematics</h2><h3 id="part-3-Number-Theory-数论"><a href="#part-3-Number-Theory-数论" class="headerlink" title="part 3 Number Theory 数论"></a>part 3 Number Theory 数论</h3><h4 id="basic-knowledge-基础知识"><a href="#basic-knowledge-基础知识" class="headerlink" title="basic knowledge 基础知识"></a>basic knowledge 基础知识</h4><ul>
+<li><p>Let $Z$ be the set of integers. Let $a,b\in Z$  and $a\neq 0$</p>
+<ul>
+<li>a devides b (整除): there is an integer $c\in Z$ such that $b=ac$<ul>
+<li>a is a divisor（因子）of b;b is mutiple of a </li>
+<li>$a \mid b$: a  divides b ;$a\nmid b$: a does not divide b </li>
+</ul>
+</li>
+<li>$n \in {2,3,\ldots}$is a prime if the only positive divisors of n are 1 and n.</li>
+<li>if n is not a prime , n is a composite（合数）（不讨论0,1）</li>
+<li>素数无穷多构造。N=最大素数以下所有数字素数只和加一，和所有已知素数互质，矛盾。</li>
+</ul>
+</li>
+<li><p>The Well-Ordering Property良序公理：</p>
+<p>​    every non-empty subset of $N(Z^+)$ has a least element .$//\forall S\in p(N) \backslash {\emptyset},\exists s_0\in S$ such that $s_0\leqslant s$ for all $s \in S$.</p>
+</li>
+<li><p>Division Algorithm带余除法:</p>
+<p>​    let $a,b\in Z$and b&gt;0.Then  there are unique integers q,r such that $0\leqslant r&lt;b$ and $a=bq+r$.</p>
+<p>prove:</p>
+<ul>
+<li><p>existence:</p>
+<pre><code>let $S=\&#123;a-bx:x\in Z \ and\ a-bx\geqslant0\&#125;.$Then$S\neq \emptyset \ and\ S \subseteq N$,$S$ has a least element , say $r=a-bq\geqslant0$</code></pre>
+<p>​        if $r\geqslant b$,then $r-b=a-b(q+1)\in S$ and $r-b&lt;r$.The contradiction shows that $0\leqslant r&lt;b.$</p>
+</li>
+<li><p>uniqueness:Suppose that $q’,r’\in Z，0\leqslant r’&lt;b$ and $a=bq’+r’$</p>
+<p>​    Recall that $a=bq+r,0\leqslant r&lt;b$.Then $b(q-q’)=r’-r\in (-b,b)$. It must be the case that $q=q’$ and thus $r=r’$.</p>
+</li>
+</ul>
+</li>
+<li><p>mod:  a mod b is defined as r(let $a,b\in Z$and b&gt;0.Then  there are unique integers q,r such that $0\leqslant r&lt;b$ and $a=bq+r$.)</p>
+</li>
+<li><p>$\lfloor \alpha \rfloor$:floor of $\alpha$,$\leqslant \alpha$</p>
+</li>
+<li><p>$\lceil \alpha \rceil$:ceil of $\alpha$,$\geqslant \alpha$</p>
+</li>
+<li><p>Greatest Common Divisor(GCD):</p>
+<ul>
+<li><p>common divisor 公因子： a integer d such that $d|a,d|b$</p>
+</li>
+<li><p>greatest common divisor 最大公因子（GCD）,gcd(a,b) : the largest common divisor of a,b</p>
+</li>
+<li><p>relatively prime 互素：gcd(a,b)=1</p>
+</li>
+<li><p>$\exists s,t\in Z,st\ gcd(a,b)=as+bt.$</p>
+</li>
+<li><p>$d=gcd(a,b)=gcd(a/d,b/d)=1$</p>
+</li>
+<li><p>计算gcd，辗转相除法，<img src="http://119.28.10.49/images/2021/08/01/20210801234050.png" alt="image-20210429221404634"></p>
+</li>
+<li><p>properties :<img src="http://119.28.10.49/images/2021/08/01/20210801234058.png" alt="image-20210429215044331"></p>
+<p>or 可兼有的或 \lor</p>
+</li>
+</ul>
+</li>
+<li><p>theorem(Congruence): Let $n\in Z^+$. For any $a\in Z$, there is a unique integer $r$, such that $0\leqslant r&lt; n$ and $a\equiv r \pmod n$.</p>
+<p>prove:</p>
+<ul>
+<li><p>Existence: by division algorithm,$\exists q,r\in Z$ such that $0\leqslant r&lt;n,a=qn+r$</p>
+<p>​    $a\equiv r\pmod n$</p>
+</li>
+<li><p>Uniqueness:Suppose that $0\leqslant r’ &lt;n$ and $a\equiv r’\pmod n$</p>
+<p>​    $|r-r’|&lt;n$ and $r\equiv r’\pmod n$</p>
+<p>​    $|r-r’|&lt;n$ and $n|(r-r’)$</p>
+<p>​    $r=r’$</p>
+</li>
+</ul>
+</li>
+<li><p>加减乘除法时间复杂度</p>
+</li>
+<li><p>Prime Number Theorem : for $x\in R^+,\pi(x)=\sum_{p\leqslant x }1$:the number of primes $\leqslant x$</p>
+<ul>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210801234118.png" alt="image-20210502230035637"></p>
+</li>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210801234126.png" alt="image-20210502230057539"></p>
+<h4 id="Fundamental-Theorem-of-Arithmetic-（算术学的基本定理）"><a href="#Fundamental-Theorem-of-Arithmetic-（算术学的基本定理）" class="headerlink" title="Fundamental Theorem of Arithmetic （算术学的基本定理）"></a>Fundamental Theorem of Arithmetic （算术学的基本定理）</h4></li>
+</ul>
+</li>
+<li><p>theorem: every intr=eger n&gt;1 can be uniquely written as $n=p_1^{e_1}\cdots p_r^{e_r}$,where $p_1,\dots,p_r$ are distinct primes ,$p_1&lt;\cdots &lt;p_r$ and $e_1,\ldots,e_r \geqslant 1$.</p>
+</li>
+<li><p>prove: 第二类数学归纳法 mathematical induction</p>
+<ul>
+<li><p>existence:</p>
+<ul>
+<li><p>显然n=2,3,4,5满足 </p>
+</li>
+<li><p>假设n$\leqslant$k满足,  Induction hypothesis: suppose true for integers $2\leqslant n \leqslant k$</p>
+</li>
+<li><p>Prove the statement for n=k+1</p>
+<ul>
+<li><p>if(n=k+1 is a prime）  $n=(k+1)^1$  QED</p>
+</li>
+<li><p>else n=k+1 is composite ,$n=n_1n_2$,by introduction hypothesis，</p>
+<p>$n1=p_1^{\alpha_1 }\cdots p_r^{\alpha_r},n2=q_1^{\beta_1 }\cdots q_s^{\beta_s}$</p>
+<p>$n=n_1n_2=p_1^{\alpha_1 }\cdots p_r^{\alpha_r}\cdot q_1^{\beta_1 }\cdots q_s^{\beta_s}$has the expected form.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>uniqueness:</p>
+<ul>
+<li>Suppose that  $n=p_1\cdots p_r=q_1\cdots q_s$,where $p_i,q_i$ are all primes.</li>
+<li>$p_1|n \Rightarrow p_1|q_1\cdots q_s \Rightarrow p_1|q_j$ for some $j\Rightarrow p_1=q_j$</li>
+<li>Without loss of generality, we suppose that j=1</li>
+<li>Then $p_2\cdots p_r=q_2\cdots q_s$</li>
+<li>The theorem is true by induction</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Ideal-理想"><a href="#Ideal-理想" class="headerlink" title="Ideal 理想"></a>Ideal 理想</h4><ul>
+<li><p>Definion:Let $\emptyset \neq I \subseteq Z$.I is called an ideal of Z if </p>
+<ul>
+<li>$a,b\in I\Rightarrow a+b\in I$;and</li>
+<li>$a\in I,r\in Z \Rightarrow ra\in I$</li>
+</ul>
+</li>
+<li><p>example:$kZ={\ldots , -2k,-k,0,k,2k,\ldots}$is an ideal of Z for every $k\in Z$</p>
+<ul>
+<li>theorem:Let I be an ideal of Z. Then $\exists d \in Z$ such that $I=dZ$<ul>
+<li>prove:<img src="http://119.28.10.49/images/2021/08/01/20210801234146.png" alt="image-20210429142553700"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Definion:Let $I_1,I_2$ be ideals of Z. Then the sum of $I_1$ and $I_2$ is define as $I_1+I_2={x+y:x\in I_1 ,y\in I_2}$</p>
+</li>
+<li><p>theorem:$I_1+I_2$ is an ideal of Z </p>
+<ul>
+<li>$$\forall a,b\in I_1+I_2,a+b\in I_1+I_2$$<ul>
+<li>$\exists x_1,x_2\in I_1,y_1,y_2\in I_2$ such that $a=x_1+y_1;b=x_2+y_2$</li>
+<li>$$a+b=(x_1+x_2)+(y_1+y_2)\in I_1+I_2$$</li>
+</ul>
+</li>
+<li>$$\forall a \in I_1+I_2 ,r\in Z ,ra\in I_1+I_2 $$<ul>
+<li>$\exists x\in I_1,y\in I_2$ such that  $a=x+y$</li>
+<li>$ra=(rx)+(ry)\in I_1+I_2$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>example:$3Z+5Z=Z;4Z+6Z=2Z$</p>
+</li>
+<li><p>$aZ+bZ=gcd(a,b)Z$</p>
+<p>prove:<img src="http://119.28.10.49/images/2021/08/01/20210801234217.png" alt="image-20210429214654669"></p>
+<p>PS: w.l.o.g.:without loss of generality (不失一般性)</p>
+</li>
+</ul>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234227.png" alt="image-20210429222601584"><br>二元关系指，R是A$\times$B 的子集，具体我感觉怪怪的，不是很明白。</p>
+<h4 id="Congruence"><a href="#Congruence" class="headerlink" title="Congruence"></a>Congruence</h4><ul>
+<li><p>definition: Let $a\in Z ,n\in Z^+$</p>
+<p>$[a]_n=a+nZ={a+nx:x\in Z}$ is called the <strong>residue class</strong> 剩余类of $a$ mod $n$</p>
+<p>any element in this class is called a <strong>representative</strong>代表元.</p>
+</li>
+<li><p>example: n=6,$[0]_6={\ldots,-12,-6,0,6,12,\ldots};[1]_6={\ldots,-11,-5,1,7,13,\ldots}$</p>
+</li>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210801234245.png" alt="image-20210429232440578"></p>
+</li>
+</ul>
+<h4 id="Z-n-Z-n"><a href="#Z-n-Z-n" class="headerlink" title="$Z_n,Z_n^*$"></a>$Z_n,Z_n^*$</h4><ul>
+<li><p>$Z_n$:</p>
+<ul>
+<li><p>Define: Letn be any positive integer.  $Z_n$ is defined as the set of all residue classes modulo n.</p>
+</li>
+<li><p>$Z_n={[0]_n,[1]_n,\ldots,[n-1]_n}={[1]_n,[2]_n,\ldots,[n-1]_n,[n]_n}=\cdots$</p>
+</li>
+<li><ul>
+<li>addition: $[a]_n+[b]_n=[a+b]_n$</li>
+<li>subtraction:$[a]_n-[b]_n=[a-b]_n$</li>
+<li>multiplication:$[a]_n\cdot [b]_n=[a\cdot b]_n$</li>
+</ul>
+</li>
+<li><p>Remark(well-defined):if $a\equiv a’\pmod n$ and $b\equiv b’\pmod n$,then$a\pm b\equiv a’\pm b’\pmod n$ and $ab=a’b’\pmod n$.</p>
+</li>
+<li><p>Hence,$[a]_n\pm [b]_n=[a’]_n+[b’]_n;[a]_n\cdot [b]_n=[a’]_n\cdot [b’]_n$</p>
+</li>
+<li><ul>
+<li>$$<br>a\equiv a’\pmod n\Rightarrow n|(a-a’) \Rightarrow \exists x \ such\ that\ a-a’=nx\<br>b\equiv b’\pmod n\Rightarrow n|(b-b’) \Rightarrow \exists x \ such\ that\ b-b’=ny\<br>(a+b)-(a’+b’)=nx+ny\<br>(a-b)-(a’-b’)=nx-ny\<br>ab-a’b’=a(b-b’)+b’(a-a’)=any+b’nx<br>$$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>$Z_n^*$:</p>
+<ul>
+<li>inverse:Let $n\in Z^+$ and let $[a]_n \in Z_n$.$[s]_n\in Z_n$ is called an inverse of $[a]_n$ if $[a]_n[s]_n=[1]_n$.</li>
+<li>division:if $[a]_n$ has an inverse $[s]_n$,define $\frac{[b]_n}{[a]_n}=[b]_n\cdot [s]_n$</li>
+<li>theorem: Let $n\in Z^+$.$[a]_n\in Z_n$ has an inverse if and only if $gcd(a,n)=1$<ul>
+<li>Only if: $\exists s\ s.t.[a]_n[s]_n\equiv [1];\exists t,as-1=nt;gcd(a,n)=1$</li>
+<li>if:$\exists s,t\ s.t.as+nt=1;as\equiv 1\pmod n$</li>
+</ul>
+</li>
+<li>Let $n\in Z^+$.Define $Z_n^*={[a]_n\in Z_n:gcd(a,n)=1}$<ul>
+<li>if n is prime ,then $Z_n^*={1,2,\ldots,n-1}$</li>
+<li>if n is composite ,then $Z_n^*\subset Z_n$</li>
+<li>example:$Z_5^*={1,2,3,4};Z_6^*={1,5}$<h4 id="Euler’s-Phi-Function-phi-n"><a href="#Euler’s-Phi-Function-phi-n" class="headerlink" title="Euler’s Phi Function  ($\phi (n)$)"></a>Euler’s Phi Function  ($\phi (n)$)</h4></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>$\phi(n)=|Z_n^*|$ for every $n\in Z^+$ ($\phi (n)$ is the number of intergers $a\in [n]$ such that $gcd(a,n)=1$)</p>
+</li>
+<li><p>property:</p>
+<ul>
+<li>if p is a prime, then $\phi(p^e)=p^{e-1}(p-1)$ for any $e\in Z^+$<ul>
+<li>prove:let $x\in [p^e]$. Then $gcd(x,p^e)\neq 1$ iff$p|x$ iff$x=p,2p,\ldots,p^{e-1}\cdot p$</li>
+<li>$\phi(p^e)=p^e-p^{e-1}=p^{e-1}(p-1)$</li>
+</ul>
+</li>
+<li>if n=pq for two different primes p and q ,then $\phi(n)=(p-1)(q-1)$.<ul>
+<li>prove容斥: $A={1,2,\ldots,pq},A_p={x\in A:p|x},A_q={x\in A:q|x}$</li>
+<li>$Z_n^*=A-A_p\cup A_q$</li>
+<li>$|Z_n^*|=|A-A_p\cup A_q|=|A|-|A_p\cup A_q|=|A|-|A_p|-|A_q|+|A_p\cap A_q|=(p-1)(q-1)$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Euler’s Theorem</strong>:Let $n\geqslant1$ and $\alpha \in Z_n^*$. Then$\alpha^{\phi(n)}\equiv 1 \pmod n$</p>
+</li>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210801234310.png" alt="image-20210501232435801"><br><img src="http://119.28.10.49/images/2021/08/01/20210801234317.png" alt="image-20210501232452974"></p>
+</li>
+<li><p><strong>Fermat’s Little Theorem</strong>:if p is a prime and $\alpha \in Z_p$. Then $\alpha^p \equiv \alpha \pmod p$.</p>
+</li>
+<li><p>•    This is a corollary of Euler’s theorem for $n=p$</p>
+</li>
+</ul>
+<h4 id="Cryptography-rsa"><a href="#Cryptography-rsa" class="headerlink" title="Cryptography_rsa"></a>Cryptography_rsa</h4><ul>
+<li><ol>
+<li>凭空产生两个质数$p,q$</li>
+<li>设$N=p \times q$</li>
+<li>根据欧拉函数$r=\phi(N)=(p-1)(q-1)$</li>
+<li>凭空产生一个小于r的整数$e$使得$e$和$r$互质​</li>
+<li>求$d$使得$ed\equiv1\pmod r$</li>
+<li>销毁$p,q$,没有人知道$p,q$是多少<br>得出$(N,e)$是公钥,$(N,d)$是私钥<br><a href="https://edgration.github.io/2020/08/02/RSA/">参考链接</a></li>
+</ol>
+</li>
+<li><p>Alice得到公钥和私钥，Alice把公钥告诉Bob，自己把私钥藏起来不告诉任何人。Bob给Alice发消息。</p>
+<ul>
+<li><p>加密：<br>假设Bob的消息是$n$,密码是$c$,手上有公钥$(N,e)$<br>$$<br>c\equiv n^e \pmod N<br>$$<br>Bob将加密后的$c$发给Alice</p>
+</li>
+<li><p>解密：</p>
+<p>Alice得到密码$c$,根据私钥$(N,d)$<br>$$<br>n \equiv c^d \pmod N<br>$$<br>解码得到$n$</p>
+</li>
+<li><p>原理：<br>$$<br>c\equiv n^e \pmod N \<br>c^d \equiv n^{e\cdot d} \pmod N<br>$$<br>因为$e\cdot d \equiv 1 \pmod r$,即$e\cdot d \equiv h \cdot r +1 \pmod N$,其中$h$是自然数<br>$$<br>c^d\equiv n^{h\cdot r+1}\pmod N\<br>c^d\equiv n^{h\cdot \phi(n)+1}\pmod N\<br>c^d\equiv n\cdot n^{h\cdot \phi(n)}\pmod N\<br>c^d\equiv n\cdot (n^{\phi(n)})^h\pmod N\<br>$$<br>根据欧拉定理$a^{\phi(n)}\equiv 1 \pmod n$<br>$$<br>c^d \equiv n\times 1^h \pmod N\<br>c^d \equiv n \pmod N<br>$$</p>
+</li>
+</ul>
+</li>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210801234354.png" alt="image-20210501235124705"></p>
+</li>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210801234359.png" alt="image-20210501235250730"></p>
+</li>
+<li><p>快速幂，取模Modulo Exponentiation（Square-and-Multiply Algorithm）</p>
+</li>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210801234410.png" alt="image-20210502003438123"></p>
+</li>
+<li><p>Euclidean Algorithm (EA)辗转相除算gcd</p>
+</li>
+<li><p>Extended Euclidean Algorithm (EEA) 算as+bt的s和t<br><img src="http://119.28.10.49/images/2021/08/01/20210801234421.png" alt="image-20210502003751598"></p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234430.png" alt="image-20210502003729049"></p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#gcd</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gcd</span>(<span class="params">a,b</span>):</span></span><br><span class="line">    <span class="keyword">if</span>(b==<span class="number">0</span>):</span><br><span class="line">        <span class="keyword">return</span> a</span><br><span class="line">    <span class="keyword">return</span> gcd(b,a%b)</span><br><span class="line"><span class="comment">#exgcd gcd(a,b)=as+bt</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">EEA</span>(<span class="params">a,b</span>):</span></span><br><span class="line">    <span class="keyword">if</span> b==<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>,<span class="number">0</span>)</span><br><span class="line">    (s,t)=EEA(b,a%b)</span><br><span class="line">    <span class="keyword">return</span> (t,s-a//b*t)</span><br><span class="line"><span class="comment">#b=a^&#123;-1&#125; (mod n)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">inverse</span>(<span class="params">a,n</span>):</span></span><br><span class="line">    b = EEA(a,n)[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">if</span>(b&lt;<span class="number">0</span>):</span><br><span class="line">        b+=n</span><br><span class="line">    <span class="keyword">return</span> b</span><br><span class="line"><span class="comment">#a^e mod n</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">multiply_and_square</span>(<span class="params">a,e,n</span>):</span></span><br><span class="line">    <span class="keyword">if</span>(e==<span class="number">0</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    res = multiply_and_square(a,e//<span class="number">2</span>,n)</span><br><span class="line">    <span class="keyword">if</span>(e%<span class="number">2</span>==<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">return</span> (res*res*a)%n</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> (res*res)%n</span><br><span class="line"><span class="comment">#rsa_enc</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">RSA_enc</span>(<span class="params">p,q,e,m</span>):</span></span><br><span class="line">    c = multiply_and_square(m,e,p*q)</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line"><span class="comment">#rsa_dec</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">RSA_dec_given_pq</span>(<span class="params">p,q,e,c</span>):</span></span><br><span class="line">    m = multiply_and_square(c,inverse(e,(p-<span class="number">1</span>)*(q-<span class="number">1</span>)),p*q)</span><br><span class="line">    <span class="keyword">return</span> m</span><br></pre></td></tr></table></figure>
+<h4 id="图论-Graph"><a href="#图论-Graph" class="headerlink" title="图论 Graph"></a>图论 Graph</h4><h5 id="basis-knowledge"><a href="#basis-knowledge" class="headerlink" title="basis knowledge"></a>basis knowledge</h5><ul>
+<li><p>graph图 $G=(V,E)$ is  defined by a non empty set V of vertices and aset of  E of edges.</p>
+</li>
+<li><p>vertices顶点    $|V|$ is called the order(阶数) of G.</p>
+</li>
+<li><p>edges边</p>
+</li>
+<li><p>endpoint端点</p>
+</li>
+<li><p>Infinite Graph 无限图 $|V|=\infty$ or$|E|=\infty$</p>
+</li>
+<li><p>Finite Graph 有限图  $|V|&lt; \infty$ or $|E| &lt;  \infty$</p>
+</li>
+<li><p>Types of Graphs</p>
+<ul>
+<li>are edges of G directed ?<ul>
+<li>directed graph 有向图</li>
+<li>undirected graph 无向图</li>
+</ul>
+</li>
+<li>multiple edges<ul>
+<li>simple graph 简单图</li>
+<li>multigraph 多重图</li>
+</ul>
+</li>
+<li>loops自环<ul>
+<li>pseudograph伪图</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Special Simple Graph:</p>
+<ul>
+<li><p>complete graph完全图:</p>
+<ul>
+<li><p>$K_n:V={v_1,\ldots,v_n};E=\Large{$${v_i,v_j}$ $:i\neq j\leq n$ $\Large}$</p>
+</li>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210801234518.png" alt="image-20210613232949681"></p>
+</li>
+</ul>
+</li>
+<li><p>cycle环，圈：</p>
+<ul>
+<li>$C_n:V={v_1,\ldots,v_n};E=\Large{$${v_1,v_2},{v_2,v_3},\ldots,{v_n,v_1}$$\Large}$</li>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210801234524.png" alt="image-20210613233030824"></li>
+</ul>
+</li>
+<li><p>wheel轮：</p>
+<ul>
+<li> $W_n:V={v_0,v_1,v_2,\ldots,v_n};E=$$\Large{$${v_1,v_2},\ldots,{v_n,v_1}$$\Large}$$\bigcup$$\Large{$${v_0,v_1},\ldots,{v_0,v_n}$$\Large}$</li>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210801234529.png" alt="image-20210613233209958"></li>
+</ul>
+</li>
+<li><p>n-Cubes方体：</p>
+<ul>
+<li>$Q_n:V={0,1}^n;E={$${u,v}:d(u,v)=1}$即u，v二进制只有一位不一样</li>
+<li>$d(u,v)=|{i\in [n] :u_i \neq v_i}|$即u，v二进制有几位不一样</li>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210801234537.png" alt="image-20210613233315227"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Adjacency List邻接表：<br>Let $G = (V, E)$ be a graph with no multiple edges. The adjacency list of $G$ is a list the vertices of the graph and all adjacent vertices<br>$v_i,v_j \in V$ are adjacent if ${v_i,v_j}$ or $(v_i,v_j)$ is an edge</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234610.png" alt="image-20210614153913422"></p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234616.png" alt="image-20210614153924554"></p>
+</li>
+<li><p>adjacency matrix邻接矩阵 :</p>
+<p>let $G=(V={v_1,\dots,v_n},E)$ be a simple graph. The adjacency matrix of $G$ is an $n\times n$ matrix $A=(a_{ij})$, where<br>$$<br>a_{ij}=\left{ \begin{array}\  1  &amp; {v_i,v_j}\in E \ 0 &amp; {v_i,v_j}\notin E\end{array}\right.<br>$$<br><img src="http://119.28.10.49/images/2021/08/01/20210801234624.png" alt="image-20210614155156083"></p>
+</li>
+<li><p>multiplicity重数:<br>let $G=(V={v_1,\dots,v_n},E)$ be an undirected graph. The adjacency matrix of $G$ is an $n\times n$ matrix $A=(a_{ij})$, where:</p>
+<ul>
+<li>$a_{ij}=$ multiplicity of ${v_i,v_j}$ when $i \neq j$</li>
+<li>$a_{ii}=$ the number of loops from $v_i$ to itself.</li>
+</ul>
+</li>
+<li><p>remark: the adjacentcy matrix of a simple graph is always symmetric.</p>
+</li>
+<li><p>incidence matrix关联矩阵:<br>let $G=(V={v_1,\dots,v_n},E={e_1,\ldots,e_m})$ be undirected.THe incidence matrix of $G$ is an $n\times m$ matrix $B=(b_{ij})$,where<br>$$<br>b_{ij}=\left{ \begin{array}\  1  &amp; if\ e_j\ is\ incident\ with\ v_i\ 0 &amp; otherwise\end{array}\right.<br>$$</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234704.png" alt="image-20210614160751342"></p>
+</li>
+<li><p>subgraph:</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234713.png" alt="image-20210614161813247"></p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234719.png" alt="image-20210614162038852"></p>
+<h5 id="edge-or-vertex-operation"><a href="#edge-or-vertex-operation" class="headerlink" title="edge or vertex operation"></a>edge or vertex operation</h5></li>
+<li><p>remove/add an edge or vertex</p>
+<ul>
+<li><p>edge：</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234726.png" alt="image-20210614170153532"></p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234732.png" alt="image-20210614170228175"></p>
+</li>
+<li><p>vertex:</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234800.png" alt="image-20210614170340758"></p>
+</li>
+</ul>
+</li>
+<li><p>edge contyractions</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234814.png" alt="image-20210614170250543"></p>
+</li>
+<li><p>union</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234819.png" alt="image-20210614174245934"></p>
+</li>
+<li><p>complement graph补图：</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234907.png" alt="image-20210614174407136"></p>
+<p>$G\cup \overline{G}$ is a complete graph($K_n$).</p>
+</li>
+</ul>
+<h5 id="degree-and-connection"><a href="#degree-and-connection" class="headerlink" title="degree and connection"></a>degree and connection</h5><ul>
+<li><p>degree:</p>
+<ul>
+<li><p>two vertices u and v in an undirected graph G are called adjacent (or neighbors) in G if u and v are endpoints of an edge e of G. Such an edge e is called incident with the vertices u and v and e is said to connect u and v.</p>
+</li>
+<li><p>Neighbor:</p>
+<p>the set of adjacent vertices. </p>
+</li>
+<li><p>degree:</p>
+<p>the number of neighbors.</p>
+</li>
+</ul>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234931.png" alt="image-20210614210701460"> </p>
+<ul>
+<li>isolated: $degree = 0$</li>
+<li>pendant: $degree = 1$</li>
+<li>对上面的图片，⑤ is pendant;⑥ is isolated</li>
+</ul>
+</li>
+<li><p>Handshaking Theorem:</p>
+<ul>
+<li>Let $G=(V,E)$ be an undirected graph with m edges. Then<br>$$<br>2m=\sum_{v \in V}deg(v)<br>$$<br>(Note: all undirected graph including simple graph,multigraph(multiple edges),pseudograph(loops))</li>
+<li>An undirected graph has an even number of vertices of odd degree.<br>sketch of pf:Let $V_1$ and $V_2$ be the set of vertices of even degree and theset of vertices of odd degree,respectively,in an undirected graph $G=(V,E)$ with m edges.Then<br>$$2m=\sum_{v \in V}deg(v)=\sum_{v \in V_1}deg(v)+\sum_{v \in V_2}deg(v)$$</li>
+</ul>
+</li>
+<li><p>degree for directed graph:<br>Let $G=(V,E)$ be a directed graph. If $(u,v)\in E$, we say that $u$ is adjacent to $v$ and $v$ is adjacent from $u$.</p>
+<ul>
+<li>$u$ is the initial vertex of $(u,v)$; $v$ is the terminal vertex of $(u,v)$.</li>
+<li>in-degree</li>
+<li>out-degree</li>
+</ul>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801234953.png" alt="image-20210614214303836"></p>
+</li>
+<li><p>Handshaking Theorem for directed graph:</p>
+<ul>
+<li>Let $G=(V,E)$ be a directed graph. Then<br>$$<br>\sum_{v \in V}deg^-(v)=\sum_{v \in V}deg^+(v)=|E|<br>$$</li>
+</ul>
+</li>
+</ul>
+<h5 id="Isomorphism"><a href="#Isomorphism" class="headerlink" title="Isomorphism"></a>Isomorphism</h5><ul>
+<li>Definition:The simple graphs $G_1=(V_1,E_1)$ and $G_2=(V_2,E_2)$ are isomorphic同构 if there is a bijection $\sigma :V_1\rightarrow V_2$ such that ${u,v}\in E_1 \Leftrightarrow {\sigma(u),\sigma(v)}\in E_2$<br>• $\sigma$ is called an isomorphism同构映射<br>• nonisomorphic: not isomorphic<img src="http://119.28.10.49/images/2021/08/01/20210801235011.png" alt="image-20210614215315412" style="zoom:80%;" />
+
+</li>
+</ul>
+<img src="http://119.28.10.49/images/2021/08/01/20210801235227.png" alt="image-20210614215459018" style="zoom: 80%;" />
+
+<ul>
+<li>Determine whether two graphs are isomorphic:<br>Definition: Graph invariants are properties preserved by graph isomorphism. For example,<br>• The number of vertices<br>• The number of edges<br>• The number of vertices of each number of degrees<br>REAMRKS: The graph invariants can be used to determine if two graphs are isomorphic or not.</li>
+</ul>
+<h5 id="Bipartite-Graph-and-Match"><a href="#Bipartite-Graph-and-Match" class="headerlink" title="Bipartite Graph and Match"></a>Bipartite Graph and Match</h5><ul>
+<li><p>Bipartite Graph二分图、二部图</p>
+<ul>
+<li>V can be devided to two disjoint part,such that there are not any edges in each part and all edges are connect two parts.</li>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210801235253.png" alt="image-20210614223957101"></li>
+<li>Definition: $G=(V,E)$ is a bipartitie  graph if $V$ has a partition ${V_1,V_2}$ such that $E\subseteq {$${u_1,u_2}:u_1\in V_1,u_2\in V_2}$.<ul>
+<li>$(V_1,V_2)$ is a bipartition of the vertex set $V$.</li>
+</ul>
+</li>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210801235258.png" alt="image-20210614224504209"></li>
+</ul>
+</li>
+<li><p>Complete Bipartite Graph完全二部图:</p>
+<ul>
+<li>A complete bipartite graph is a graph $K_{m,n}=(V,E)$ with $V={x_1,\ldots,x_m}\cup {y_1,\ldots,y_n}$ and $E={$${x_i,y_j}:i\in [m],j\in [n]}$</li>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210801235328.png" alt="image-20210614234515056" style="zoom:80%;" /></li>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210801235340.png" alt="image-20210614234601349"></li>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210801235346.png" alt="image-20210614235736731"></li>
+</ul>
+</li>
+<li><p>Matching</p>
+<ul>
+<li><p>Definition:<br>A matching in a simple graph $G=(V,E)$ is a subset $M\subset E$ such that no two edges in M are incident with the same vertex.<br>A maximum matching is a matching with the largestnumber of edges.<br>A matching in a bipartite graph with $V=V_1\cup V_2$ is a complete matching from $V_1$ to $V_2$ if every vertex in $V_1$ is the endpoint of an edge in the matching.</p>
+</li>
+<li><p>Hall’s Marriage Theorem:<br>A bipartitie graph $G=(X\cup Y,E)$ has a complete matching from $X$ to $Y$ iff $|N(A)|\geqslant |A|$ for any $A\subseteq X$</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801235354.png" alt="image-20210615001819265"></p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801235400.png" alt="image-20210615001825992"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>详细证明略去，这次不考</p>
+<h5 id="Path-connected-disconnected"><a href="#Path-connected-disconnected" class="headerlink" title="Path,connected, disconnected"></a>Path,connected, disconnected</h5><ul>
+<li><p>Path</p>
+<ul>
+<li><p>Definition:<br><img src="http://119.28.10.49/images/2021/08/01/20210801235419.png" alt="image-20210615002943581"></p>
+</li>
+<li><p>for directed path:<br><img src="http://119.28.10.49/images/2021/08/01/20210801235425.png" alt="image-20210615003154242"></p>
+</li>
+</ul>
+</li>
+<li><p>Connectivity</p>
+<ul>
+<li>Definition:<br>An undirected graph $G$ is said to be connected if there is a path between any pair of distinct vertices.<br>• Graph of order 1 is connected; the complete graph $K_n$ is connected<br>• disconnected非连通的: not connected<br>• disconnect G: remove vertices or edges to produce a disconnected subgraph</li>
+<li>Theorem:Let $G=(V,E)$ be a connected undirected graph. Then there is a simple path between any pair of distinct vertices.<br>证明同上略。</li>
+<li>Connected Component：<br><img src="http://119.28.10.49/images/2021/08/01/20210801235430.png" alt="image-20210615004755824"></li>
+<li>• $v\in V$ is a cut vertex割点if $G-v$ has more connected components than G<br>• $e\in E$ is a cut edge割边、bridge桥if $G-e$ has more connected components than G</li>
+</ul>
+</li>
+<li><p>Find cut vertices and cut edge(s)</p>
+<ul>
+<li><p>Vertex Connectivity</p>
+<ul>
+<li>Definition:A connected undirected graph $G=(V,E)$ is said to be nonseparable不可分的if $G$ has no cut vertex.(one point)</li>
+<li>Let $G=(V,E)$ be a connected simple graph.<br>• vertex cut点割集: A subset $V’\subseteq V$ such that $G-V’$ is disconnected<br>• vertex connectivity点连通度$\kappa(G)$ : the minimum number of vertices whose<br>removal disconnect $G$ or results in $K_1$; equivalently,<br>  • if $G$ is disconnected, $\kappa(G)=0$; //additional definition<br>  • if $G=K_n$,$\kappa(G)=n-1$ //$K_n$ has no vertex cut<br>  • else,$\kappa(G)$ is the minimum size of a vertex cut of $G$</li>
+</ul>
+</li>
+<li><p>Theorem:<br>​    <img src="http://119.28.10.49/images/2021/08/01/20210801235448.png" alt="image-20210615011734327"></p>
+</li>
+<li><p>Property：</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801235453.png" alt="image-20210615012332677"></p>
+</li>
+<li><p>Edge connectivity</p>
+<ul>
+<li>Definition:Let $G=(V,E)$ be a connected simple graph. $E’\subseteq E$ is an edge cut边割集of $G$ if $G-E’$ is disconnected.</li>
+<li>Let $G=(V,E)$ be a connected simple graph.<br>The edge connectivity边连通度($\lambda(G)$) of $G$ is defined as below:<br>• $G$ disconnected: $\lambda(G)$ = 0<br>• $G$ connected:<br>  • $|V|=1$: $\lambda(G)$ = 0<br>  • $|V|&gt;1$: $\lambda(G)$ is the minimum size of edge cuts of $G$.</li>
+</ul>
+</li>
+<li><p>Theorem:<br><img src="http://119.28.10.49/images/2021/08/01/20210801235545.png" alt="image-20210615020543182"></p>
+</li>
+<li><p>Let $G=(V,E)$ be a simple graph. Then $\kappa(G)\leqslant\lambda(G)\leqslant\delta(G)$,where $\delta(G)=min_{v\in V} deg(v)$ is the least degree of $G’s$ vertices.<br>  prove(homework)</p>
+</li>
+</ul>
+</li>
+<li><p>Connected Directed Graphs</p>
+<ul>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210801235600.png" alt="image-20210615021258988"></li>
+</ul>
+</li>
+<li><p>路径同构不变性<img src="http://119.28.10.49/images/2021/08/01/20210801235612.png" alt="image-20210615021845809"></p>
+<h5 id="Euler-circuit-Euler-path-Hamilton-Circuits-Hamilton-path"><a href="#Euler-circuit-Euler-path-Hamilton-Circuits-Hamilton-path" class="headerlink" title="Euler circuit, Euler path, Hamilton Circuits, Hamilton path"></a>Euler circuit, Euler path, Hamilton Circuits, Hamilton path</h5></li>
+<li><p>Counting Paths Between Vertices</p>
+<p>证明详细分析见后，期末1/5</p>
+</li>
+</ul>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801235623.png" alt="image-20210615022004836"></p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801235628.png" alt="image-20210615022023000"></p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801235634.png" alt="image-20210615022205569"></p>
+<ul>
+<li><p>Euler circuit and Euler path<br><img src="http://119.28.10.49/images/2021/08/01/20210801235704.png" alt="image-20210615023003182"><br><img src="http://119.28.10.49/images/2021/08/01/20210801235710.png" alt="image-20210615023128985"></p>
+<ul>
+<li><p>Necessary and sufficient condition for Euler circuit<br>证明后面详细分析，期末2/5<br><img src="http://119.28.10.49/images/2021/08/01/20210801235716.png" alt="image-20210615023444640"></p>
+</li>
+<li><p>欧拉循环算法<br><img src="http://119.28.10.49/images/2021/08/01/20210801235722.png" alt="image-20210615023821104"></p>
+</li>
+<li><p>欧拉路径 </p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801235729.png" alt="image-20210615024304039"></p>
+</li>
+</ul>
+</li>
+<li><p>Hamilton Paths and Circuits</p>
+<ul>
+<li><p>Definition: Let $G=(V,E)$ be a graph.<br>• Hamilton Path: A simple path that passes through every vertex<br>exactly once.<br>• Hamilton Circuit: A simple circuit that passes through every<br>vertex exactly once.<br><img src="http://119.28.10.49/images/2021/08/01/20210801235906.png" alt="image-20210615025139183"></p>
+</li>
+<li><p>Determine if there is a Hamilton circuit in a given graph 0?<br>• This problem is NP-Complete. //that means very difficult</p>
+</li>
+<li><p>Necessary conditions on Hamilton circuit.<br>• If 0 has a Hamilton circuit, then G doesn’t have a vertex of degree 1<br>• If 0 has a Hamilton circuit and a vertex of degree 2, then a Hamilton circuit of 0 traverses both edges.</p>
+</li>
+<li><p>Sufficient conditions for existence</p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801235833.png" alt="image-20210615025504489"></p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210801235940.png" alt="image-20210615025509979"></p>
+<p><img src="http://119.28.10.49/images/2021/08/01/20210802000006.png" alt="image-20210615025634489"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="Planar-Graph"><a href="#Planar-Graph" class="headerlink" title="Planar Graph"></a>Planar Graph</h5><ul>
+<li><p><img src="http://119.28.10.49/images/2021/08/01/20210802000019.png" alt="image-20210615030151027"></p>
+</li>
+<li><p>$K_{3,3},K_5$ 都不是planar</p>
+</li>
+<li><p>Regions:</p>
+<ul>
+<li>DEFINITION: Let $G=(V,E)$ be a planar graph. Then the plane is divided into several regions面by the edges of $G$.</li>
+<li><img src="http://119.28.10.49/images/2021/08/01/20210802000037.png" alt="image-20210615033723462"></li>
+</ul>
+</li>
+</ul>
+<p>大括号无序点对，无向边；小括号有序点对，有向边。<br>已整理ppt：lec1,2,3,4(未举例);lec7,8,9,10,11,12</p>
+<p>lec5,lec6（简要）</p>
+<p>lec13,14,15,16,17</p>
+<p>lec18,19,20,21,22,23,24,25,26</p>
+]]></content>
+      <categories>
+        <category>maths</category>
+      </categories>
+      <tags>
+        <tag>notes</tag>
+      </tags>
+  </entry>
 </search>
